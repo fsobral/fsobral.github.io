@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitinal//EN">
+
+<html>
+<head>
+
+<META http-equiv='Content-Type' content='text/html;charset=UTF-8'>
+
+<title>Francisco N. C. Sobral's Home Page</title>
+
+<LINK REL=STYLESHEET HREF="padrao.css" TYPE="text/css">
+
+<STYLE>
+
+TR.title_sep{
+   background-color: #4444FF;
+}
+
+</STYLE>
+
+<SCRIPT TYPE='text/javascript'>
+
+function aparece(obj,txt) {
+
+/*
+this.alert("offsetWidth=" + obj.offsetWidth + "\n" +
+           "offsetHeight=" + obj.offsetHeight + "\n" +
+           "offsetParent=" + obj.offsetParent.offsetTop + "\n" +
+           "offsetParent=" + obj.offsetParent.offsetLeft + "\n" +
+           "offsetTop=" + obj.offsetTop + "\n" +
+           "offsetLeft=" + obj.offsetLeft + "\n" +
+           "scrollHeight=" + obj.scrollHeight + "\n" +
+           "Proximo=" + obj.nextSibling.nextSibling.offsetTop);
+*/          
+
+var a = obj.parentNode.parentNode.parentNode.rows;
+
+for (i = 0; a[i] != obj.parentNode.parentNode; i++);
+
+if ( i < a.length - 1 && a[i + 1].className == '_abstract_row' )
+   obj.parentNode.parentNode.parentNode.deleteRow(i + 1);
+else {
+   var newRow = obj.parentNode.parentNode.parentNode.insertRow(i + 1);
+   newRow.className = '_abstract_row';
+
+   var abstract = newRow.insertCell(0);
+   abstract.innerHTML = txt;
+   abstract.style.backgroundColor = "#CCCCCC";
+}
+}
+
+
+</SCRIPT>
+
+</head>
+
+<body>
+
+<TABLE CLASS='main_table' ID='main_table'> 
+
+<TR> <TD ALIGN='right'> <A HREF='index.html'> Main page </A> </TD> </TR>
+
+<TR>
+<TD><h1>Publications</h1></TD>
+</TR>
+
+<TR CLASS='title_sep'> <TD> Other works </TD></TR>
+
+<TR><TD> 
+F. N. C. Sobral,"Derivative-free optimization on thin domains", Advisor: Prof. José Mario Martínez, Ph. D. Thesis,
+Institute of Mathematics, Statistics and Scientific Computation, State University of Campinas, Campinas, Sao
+Paulo, Brazil, 2012. (in Portuguese)
+<A HREF='#' ONCLICK='aparece(this,"Derivative-free optimization problems arise from models whose derivatives of some functions are not available. This information is unavailable due to extremely complex and black-box functions, originated from simulation procedures, or even to user inability. Following the growth in the number of applications, the number of derivative-free algorithms has increased in the last years. However, few algorithms are able to handle thin feasible domains efficiently, for example, in the presence of equality nonlinear constraints. In the present work, we describe the theory and implementation of two algorithms capable of dealing with thin-constrained derivative-free problems. Their definition considers that the objective function evaluation is the most expensive part of the problem. Based on this principle, the process of solving a problem is split into two phases. In the restoration phase, we try to improve the feasibility without evaluating the objective function. In the minimization phase, the aim is to decrease the objective function value by using well-established algorithms in order to solve derivative-free problems with simple constraints. The first algorithm uses Inexact Restoration ideas together with a decreasing infeasibility tolerance. Under the usual hypotheses of direct search methods, we show global minimization results. The second algorithm extends to the derivative-free case all the theoretical results obtained in a recent line-search Inexact Restoration algorithm. In this approach, only the derivatives of the objective function are not available. We perform numerical experiments to show the advantages of each algorithm, in particular when comparing with penalty-like algorithms.")'>Abstract</A>
+<A HREF='http://www.bibliotecadigital.unicamp.br/document/?code=000854936&opt=1'>Download</A> (<A HREF='docs/dfthesis.pdf'>Alternative download</A>)
+</TR> </TD>
+
+<TR><TD> 
+F. N. C. Sobral,"Bilevel programming: reformulation using KKT
+conditions", Advisor: Prof. Ernesto G. Birgin, Master Degree Thesis,
+Institute of Mathematics and Statistics, University of Sao Paulo, Sao
+Paulo, Brazil, 2008. (in Portuguese)
+<A HREF='#' ONCLICK='aparece(this,"In problems of hierarchical nature, the choices made by the most influential level - the so-called leader - affect the behavior of the lower levels. For each one of the leader&#039;s decisions there is a response from the lower levels, which maximizes the value of their respective objectives. These optimal choices, in return, may have influence in the results achieved by the leader, which also wants to make the optimal choices. In mathematical programming, this kind of problem is described as a multilevel programming problem. The present work considers a specific kind of multilevel problem: the bilevel mathematical problem. We study a resolution technique which consists in replacing the lower level problem by its necessary first order conditions, which can be formulated in various ways, as complementarity constraints occur and are modified. The new reformulated problem is a nonlinear programming problem which can be solved by classical optimization methods. Using first and second order optimality conditions, we show the relations between the original bilevel problem and the reformulated problem. We apply the described technique to solve a set of bilevel problems taken from the literature, analyse their behavior and discuss strategies to prevent undesirable difficulties that may arise.")'>Abstract</A>
+<A HREF='http://www.teses.usp.br/teses/disponiveis/45/45134/tde-11042008-163904/'> Download</A>
+</TR> </TD>
+
+<TR> <TD>
+<DIV>
+   F. N. C. Sobral, "Minimizando objetos em problemas de
+   empacotamento", Advisor: Prof. Ernesto G. Birgin, Undergraduate
+   work, Institute of Mathematics and Statistics, University of Sao
+   Paulo, Sao Paulo, Brazil, 2006. (in Portuguese)
+   <A HREF='docs/monografia.ps'>Download PS</A>
+</DIV>
+</TD></TR>
+
+<TR CLASS='title_sep'> <TD> Papers </TD></TR>
+
+<TR><TD> L. F. Bueno, A. Friedlander, J. M. Mart&iacute;nez, and
+    F. N. C. Sobral, "Inexact Restoration method for Derivative-Free
+    Optimization with smooth constraints", SIAM Journal on
+    Optimization, 23(2), pp. 1189-1213, 2013.
+
+    <A HREF='#' ONCLICK='aparece(this,"A new method is introduced for solving constrained optimization problems in which the derivatives of the constraints are available but the derivatives of the objective function are not. The method is based on the Inexact Restoration framework, by means of which each iteration is divided in two phases. In the first phase one considers only the constraints, in order to improve feasibility. In the second phase one minimizes a suitable objective function subject to a linear approximation of the constraints. The second phase must be solved using derivative-free methods. An algorithm introduced recently by Kolda, Lewis, and Torczon for linearly constrained derivative-free optimization is employed for this purpose. Under usual assumptions, convergence to stationary points is proved. A computer implementation is described and numerical experiments are presented.")'>Abstract</A>
+    <A HREF='files/bfms.pdf'>Download submitted version</A>
+</TD></TR>
+
+<TR><TD> J. M. Mart&iacute;nez and F. N. C. Sobral, "Constrained
+    Derivative-Free Optimization on Thin Domains", Journal of Global
+    Optimization, 56(3), pp. 1217-1232, 2013.
+
+    <A HREF='#' ONCLICK='aparece(this,"Many derivative-free methods for constrained problems are not efficient for minimizing functions on \"thin\" domains. Other algorithms, like those based on Augmented Lagrangians, deal with thin constraints using penalty-like strategies. When the constraints are computationally inexpensive but highly nonlinear, these methods spend many potentially expensive objective function evaluations motivated by the difficulties of improving feasibility. An algorithm that handles efficiently this case is proposed in this paper. The main iteration is split into two steps: restoration and minimization. In the restoration step the aim is to decrease infeasibility without evaluating the objective function. In the minimization step the objective function <I>f</I> is minimized on a relaxed feasible set. A global minimization result will be proved and computational experiments showing the advantages of this approach will be presented.")'>Abstract</A>
+    <A HREF='files/msskinny.pdf'>Download submitted version</A>
+</TD></TR>
+
+<TR><TD>
+    E. G. Birgin and F. N. C. Sobral, "Minimizing the object 
+    dimensions in circle and sphere packing problems", Computers
+    & Operations Research 35, pp. 2357-2375, 2008.
+    <A HREF='#' ONCLICK='aparece(this,"Given a fixed set of identical or different-sized circular items, the problem we deal with consists on finding the smallest object within which the items can be packed. Circular, triangular, squared, rectangular and also strip objects are considered. Moreover, 2D and 3D problems are treated. Twice-differentiable models for all these problems are presented. A strategy to reduce the complexity of evaluating the models is employed and, as a consequence, instances with a large number of items can be considered. Numerical experiments show the flexibility and reliability of the new unified approach.")'>Abstract</A>
+</TD></TR>
+</TABLE>
+      
+<hr>
+<address></address>
+<!-- hhmts start -->
+Last modified: February 2014
+<!-- hhmts end -->
+</body> </html>
+

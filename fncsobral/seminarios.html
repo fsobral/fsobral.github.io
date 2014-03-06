@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitinal//EN">
+
+<html>
+<head>
+
+<META http-equiv='Content-Type' content='text/html;charset=UTF-8'>
+
+<title>Francisco N. C. Sobral's Home Page</title>
+
+<LINK REL=STYLESHEET HREF="padrao.css" TYPE="text/css">
+
+<STYLE>
+
+TR.title_sep{
+   background-color: #4444FF;
+}
+
+TR.table_description{
+   background-color: #999999;
+}
+
+</STYLE>
+
+<SCRIPT TYPE='text/javascript'>
+
+function aparece(obj,txt) {
+
+var a = obj.parentNode.parentNode.parentNode.rows;
+
+for (i = 0; a[i] != obj.parentNode.parentNode; i++);
+
+if ( i < a.length - 1 && a[i + 1].className == '_abstract_row' )
+   obj.parentNode.parentNode.parentNode.deleteRow(i + 1);
+else {
+   var newRow = obj.parentNode.parentNode.parentNode.insertRow(i + 1);
+   newRow.className = '_abstract_row';
+
+   var abstract = newRow.insertCell(0);
+   abstract.colSpan = 3;
+   abstract.innerHTML = txt;
+   abstract.style.backgroundColor = "#CCCCCC";
+}
+}
+
+
+</SCRIPT>
+
+</head>
+
+<body>
+
+<TABLE CLASS='main_table' ID='main_table'> 
+
+<TR> <TD ALIGN='right'> <A HREF='index.html'> Inicial </A> </TD> </TR>
+
+<TR>
+<TD><h1>(Falta um nome para o seminário!)</h1></TD>
+</TR>
+
+<TR> <TD>
+
+    <TABLE WIDTH='100%'>
+      <TR CLASS='title_sep'> <TD COLSPAN='3'>Semestre 1 - 2014</TD></TR>
+      <TR CLASS='table_description'> <TD>Data</TD> <TD>Palestrante</TD> <TD>Título</TD>
+
+      <TR>
+        <TD>10/03</TD> <TD>Francisco Sobral</TD>
+        <TD> Otimização sem derivadas com restrições magras <A HREF='#' ONCLICK='aparece(this,"Apresentarei os resultados encontrados no meu doutorado e possibilidades para o futuro.")'>Resumo</A>
+        </TD>
+      </TR>
+
+      <TR>
+        <TD>24/03</TD> <TD>Emerson Castelani</TD>
+        <TD> Lagrangiano Aumentado com região de confiança
+        </TD>
+      </TR>
+
+      <TR>
+        <TD>07/04</TD> <TD></TD>
+        <TD></TD>
+      </TR>
+
+      <TR>
+        <TD>21/04</TD> <TD></TD>
+        <TD></TD>
+      </TR>
+
+      <TR>
+        <TD>05/05</TD> <TD></TD>
+        <TD></TD>
+      </TR>
+
+      <TR>
+        <TD>19/05</TD> <TD></TD>
+        <TD></TD>
+      </TR>
+
+      <TR>
+        <TD>02/06</TD> <TD></TD>
+        <TD></TD>
+      </TR>
+
+      <TR>
+        <TD>16/06</TD> <TD></TD>
+        <TD></TD>
+      </TR>
+    </TABLE>
+
+</TR> </TD>
+
+</TABLE>
+      
+<hr>
+<address></address>
+<!-- hhmts start -->
+Last modified: February 2014
+<!-- hhmts end -->
+</body> </html>
+
