@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitinal//EN">
+
+<html>
+<head>
+
+<title>Como instalar o GNU Octave?</title>
+
+<LINK REL=STYLESHEET HREF="../padrao.css" TYPE="text/css">
+
+</head>
+
+<meta http-equiv='content-type' content='text/html;charset=utf-8'>
+
+<body>
+
+<TABLE CLASS='main_table'> <!-- Tabela principal -->
+
+<TR> <TD ALIGN='right'> <A HREF='../index.html'>Inicial</A> </TD> </TR>
+
+<TR>
+<TD><h1>Como instalar o GNU Octave?</h1></TD>
+</TR>
+
+<TR> <TD ALIGN='center'>
+
+<TABLE CLASS='content_table'>
+
+  <TR> <TD>
+      <P>
+      <U><B>GNU Octave no Ubuntu</B></U>
+      <P>
+	Para realizar esta tarefa você deve ser o administrador do
+	computador.
+      </P>
+      <OL>
+	<LI> Em um terminal, digite:
+	  <DIV CLASS='code'>sudo apt-get install octave</DIV>
+	<LI> Confirme a instalação dos pacotes necessários.
+	<LI> Após a instalação dos pacotes, digite
+	  <DIV CLASS='code'>octave</DIV>
+	  ou, se quiser trabalhar com o Octave em uma janela estilo Matlab, digite
+	  <DIV CLASS='code'>octave --force-gui</DIV>
+      </OL>
+      <P>
+      Existem muitas bibliotecas que podem ser instaladas no Octave,
+      permitindo uma infinidade de aplicações. Para consultá-las,
+      basta digitar o comando:
+      <DIV CLASS='code'>apt-cache search octave</DIV>
+      </P>
+</TD> </TR>
+
+<TR> <TD>
+      <U><B>GNU Octave no Windows - Tentativa 1</B></U>
+      <OL>
+	<LI> <A HREF='http://www.java.com/en/'>Nesta página</A> você pode verificar se possui o Java instalado no seu computador e instalá-lo, caso necessário.
+	<LI> Faça o download do <A HREF='http://sourceforge.net/projects/octave/files/Octave%20Windows%20binaries/Octave%203.6.4%20for%20Windows%20Microsoft%20Visual%20Studio/'>instalador do Octave para o Windows</A>. Infelizmente a versão mais atualizada é a 3.6.4 (utilizamos a 3.8.1 no LabMac).
+	<LI> Selecione a opção geral.
+	<LI> Escolha o <I>gnuplot</I> como o renderizador de gráficos.
+	<LI> <FONT COLOR='#AA0000'>Não se esqueça do local onde o Octave foi instalado!</FONT>
+	<LI> Faça o download do <A HREF='http://sourceforge.net/projects/domainmath/'>DomainMathIDE</A>, que é simplesmente uma janelinha bonita para rodar o Octave.
+	<LI> Na primeira vez que for utilizá-lo, ele vai dar um erro, dizendo que não encontrou o Octave. Você deve então fornecer o local onde está o executável do Octave.
+      </OL>
+</TD> </TR>
+
+<TR> <TD>
+      <U><B>GNU Octave no Windows - Tentativa 2</B></U>
+      <OL>
+	<LI> Faça o download do <A HREF='https://cygwin.com/'>CygWin</A>.
+	<LI> Execute o programa.
+	  <P><A HREF='abrindo-instalador.jpg'><IMG SRC='abrindo-instalador-p.jpg' ALIGN='center'></A></P>
+	<LI> Avance até chegar na tela de seleção do servidor de pacotes. Nesta hora, escolha o <B>linorg.usp.br</B>.
+	  <P><A HREF='escolha-servidor.jpg'><IMG SRC='escolha-servidor-p.jpg' ALIGN='center'></A></P>
+	<LI> Na próxima tela, você terá que escolher os pacotes a serem instalados. Digite <B>octave</B> na busca. Selecione o pacote com o mesmo nome, como mostrado abaixo.
+	  <P><A HREF='selecionando-octave.jpg'><IMG SRC='selecionando-octave-p.jpg'></A></P>
+	  Todos estes outros pacotes que aparecem são funções especiais para resolver uma inifinidade de problemas, tais como: matemática simbólica (como o Maple), estatística, otimização, programação paralela, etc. Caso tenha interesse em algum, selecione-o também.
+
+	<LI> Digite <B>gnuplot</B> na busca e selecione-o para a instalação.
+	  <P><A HREF='selecionando-gnuplot.jpg'><IMG SRC='selecionando-gnuplot-p.jpg'></A></P>
+	<LI> Repita o processo com o pacote chamado <B>xinit</B>. Clique em avançar. Na próxima tela serão apresentados todos os outros pacotes que serão instalados, em complemento aos que você selecionou. Avance.
+	<LI> Após a instalação, reinicie o computador.
+	<LI> Entre no CygWin e digite
+	  <DIV CLASS='code'>xinit</DIV>
+	  A sua tela vai piscar e um novo terminal vai aparecer.
+	<LI> Clique nesse terminal e digite
+	  <DIV CLASS='code'>octave</DIV>
+	  ou, se quiser trabalhar com o Octave em uma janela estilo Matlab, digite
+	  <DIV CLASS='code'>octave --force-gui</DIV>
+      </OL>
+</TD> </TR>
+
+</TABLE>
+
+</TD></TR>
+</TABLE>
+      
+<hr>
+
+Criado em 23 de Julho de 2014
+
+</body> </html>

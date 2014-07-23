@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitinal//EN">
+
+<html>
+<head>
+
+<title>Como instalar o GNU Octave?</title>
+
+<LINK REL=STYLESHEET HREF="../padrao.css" TYPE="text/css">
+
+</head>
+
+<meta http-equiv='content-type' content='text/html;charset=iso-8859-1'>
+
+<body>
+
+<TABLE CLASS='main_table'> <!-- Tabela principal -->
+
+<TR> <TD ALIGN='right'> <A HREF='../index.html'>Inicial</A> </TD> </TR>
+
+<TR>
+<TD><h1>Skinny</h1>
+    <h2> An algorithm for constrained derivative-free
+    problems <h2> </TD>
+</TR>
+
+<TR> <TD ALIGN='center'>
+
+<TABLE CLASS='content_table'>
+
+  <TR> <TD> Complete tables of the
+  tests. <A HREF='tables.pdf'>PDF</A>
+  </TD> </TR>
+
+  <TR> <TD> Description and theoretical aspects of the algorithm.
+      <A HREF='../files/msskinny.pdf'>PDF</A>
+  </TD> </TR>
+
+  <TR> <TD>
+      <P>
+      <U><B>Download and compilation</B></U>
+      <UL>
+	<LI> Download the source code
+	from <A HREF='skinny.tgz'>here</A>.
+	<LI> Modify the file toyprob.f90 to solve the desirable
+	problem.
+	<LI> Generate the executable by typing
+	  <DIV CLASS='code'>
+	    make eng-toyprob
+	  </DIV>
+      </UL>
+      <P>
+      We provide within the file <I>skinny.f90</I> a simple
+      implementation of the compass search which can be used both in
+      the restoration and in the minimization phases. <BR> The code is
+      prepared for the use of a good variety of algorithms. In the
+      restoration phase it is possible to
+      use <A HREF='http://www.ime.usp.br/~egbirgin/tango'>Algencan</A>. In
+      the minimization phase it is possible to use: compass search
+      (built in), Nelder-Mead, BOBYQA and
+      also <A HREF='https://projects.coin-or.org/Dfo'>DFO</A>. Some
+      minor changes have to be made in each external code in order to
+      guarantee the good behavior of <I>Skinny</I>.
+      </P>
+</TD> </TR>
+
+<TR> <TD>
+      <U><B>Using Algencan</B></U>
+      <OL>
+	<LI> Download
+	the <A HREF='http://www.ime.usp.br/~egbirgin/tango'>distribution
+	of Algencan</A>. Unpack it, enter in the directory and modify
+	the following line of the file <I>Makefile</I>:
+	  <DIV CLASS='code'> FC := gfortran-4.2 </DIV>
+	<LI> Type
+	  <DIV CLASS='code'>make</DIV> 
+	  An error will occur (gcc: no input files),
+	  but the necessary files will be generated.
+	<LI> Go to 'sources/algencan' and type
+	  <DIV CLASS='code'>
+	    ar cr libalgencan.a *.o <BR>
+	    ranlib libalgencan.a
+	  </DIV>
+	<LI> Download <A HREF='skinny.tgz'><I>Skinny</I>'s
+	source code</A> and unpack it.
+	<LI> Copy the file <I>libalgencan.a</I> to the directory
+	containing <I>Skinny</I>.
+	<LI> Modify the file toyprob.f90 to solve the desirable
+	problem. Algencan will use the derivatives of the constraints.
+	<LI> Edit the following files:
+	  <UL>
+	    <LI> <I>skinny.f90</I>: parameter SK_RESTTYPE = 1.
+	    <LI> <I>restoration.f90</I>: uncomment the pieces
+	      described inside the file. Uncomment the subroutines
+	      evalfc, evalgjac and evalhl.
+	    <LI> <I>Makefile</I>: put libalgencan.a in the variable
+	    PCLIBS.
+	  </UL>
+	<LI> Generate the executable by typing
+	  <DIV CLASS='code'>make eng-toyprob</DIV>
+
+	  <FONT COLOR='#AA0000'> If you do not want to see Algencan's
+	  output, put the file <I>.silent</I> in the same place where
+	  you are executing <I>Skinny</I>.</FONT>
+      </OL>
+</TD> </TR>
+
+<TR> <TD>
+      <U><B>Using DFO</B></U>
+      <OL>
+	<LI> DFO needs Algencan to restore infeasible points. Follow
+	the steps 1-3 above to create <I>libalgencan.a</I>.
+	<LI> Download
+	  <A HREF='https://projects.coin-or.org/Dfo'>DFO</A>, unpack
+	  it, enter in the directory and modify the following line of
+	  the file <I>Makefile</I>:
+	  <P ALING='center'> F77 := gfortran-4.2 </P>
+	<LI> To avoid name conflicts between DFO and Algencan,
+	substitute SCL by DFOSCL and UNSCL by DFOUNSCL in the
+	files <I>dfo.f</I>, <I>ptinit.f</I>, <I>impmod.f</I>
+	and <I>dfosolv.f</I>.
+	<LI> Type
+	  <DIV CLASS='code'>
+	    make dfo.o dfosolv.o ptinit.o nbuild.o evalnp.o mbuild.o
+	    fd.o gterms.o funcon.o zero.o mvalue.o impmod.o xgnew.o
+	    getnp.o funmer.o ptrepl.o ptexch.o nextnp.o ranlux.o
+	  </DIV>
+	  <DIV CLASS='code'>
+	    ar ruv libdfo.a dfo.o dfosolv.o ptinit.o nbuild.o evalnp.o
+	    mbuild.o fd.o gterms.o funcon.o zero.o mvalue.o impmod.o
+	    xgnew.o getnp.o funmer.o ptrepl.o ptexch.o nextnp.o
+	    ranlux.o
+	  </DIV>
+	  <DIV CLASS='code'>ranlib libdfo.a</DIV>
+	<LI> Download <A HREF='skinny.tgz'><I>Skinny</I>'s
+	source code</A> and unpack it.
+	<LI> Copy the previously generated files <I>libdfo.a</I>
+	and <I>libalgencan.a</I> to the directory
+	containing <I>Skinny</I>.
+	<LI> Put the file 
+	  <A HREF='https://projects.coin-or.org/Dfo/browser/stable/2.0/dfo_model_inc.f'>
+	  <I>dfo_model_inc.f</I></A> into the directory
+	  containing <I>Skinny</I>.
+	<LI> Modify the file toyprob.f90 to solve the desirable
+	problem. DFO and Algencan will use the derivatives of the
+	constraints.
+	<LI> Substitute files <I>skinny.f90</I> and <I>Makefile</I>
+	    by: <A HREF='dfo/skinny.f90'>skinny.f90</A>
+	    and <A HREF='dfo/Makefile'>Makefile</A>.
+	<LI> DFO uses LAPACK and BLAS subroutines. Be sure that
+	LIBLAPACK and LIBBLAS in <I>Makefile</I> point to the correct
+	place.
+	<LI> Generate the executable by typing
+	  <DIV CLASS='code'>make eng-toyprob</DIV>
+
+	  <FONT COLOR='#AA0000'> If you do not want to see Algencan's
+	  output, put the file <I>.silent</I> in the same place where
+	  you are executing <I>Skinny</I>.</FONT>
+      </OL>
+</TD> </TR>
+
+</TABLE>
+
+</TD></TR>
+</TABLE>
+      
+<hr>
+<address></address>
+<!-- hhmts start -->
+Last modified: November 2011
+<!-- hhmts end -->
+</body> </html>
