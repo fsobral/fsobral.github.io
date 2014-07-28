@@ -3,7 +3,7 @@
 <html>
 <head>
 
-<title>Cálculo Numérico</title>
+<title>Matemática Computacional</title>
 
 <LINK REL=STYLESHEET HREF="../../../../padrao.css" TYPE="text/css">
 
@@ -50,9 +50,9 @@
 </TD>
 
 <TD ALIGN='center'>
-  <DIV STYLE='background-color:#E98484;width:200px'>
-    <P><FONT SIZE=4><B><U>Informes</U></B></FONT></P> (23/07) As aulas
-    ocorrerão no Laboratório de Matemática, sala 225 do Bloco F67.
+  <DIV STYLE='background-color:#E90484;width:200px'>
+    <P><FONT SIZE=4><B><U>Informes</U></B></FONT></P> (28/07) Turma 31
+    não terá aula no dia 01/08! Façam os exercícios recomendados.
   </DIV>
 </TD>
 </TR>
@@ -64,11 +64,15 @@
       <TABLE>
 	<TH ALIGN='left' STYLE='color:#BB0000;font-size:20px'>Provas</TH>
 	<TR> <TD> <B>Turma 1</B> </TD> </TR>
-	<TR> <TD> P1 - 25/10 </TD> </TR>
+	<TR> <TD> P1 - 25/09 </TD> </TR>
 	<TR> <TD> P2 - 19/11 </TD> </TR>
 	<TR> <TD> Segunda chance - 20/11 </TD> </TR>
 	<TR> <TD> Avaliação Final - 11/12 </TD> </TR>
 	<TR> <TD> <B>Turma 31</B> </TD> </TR>
+	<TR> <TD> P1 - 24/09 </TD> </TR>
+	<TR> <TD> P2 - 19/11 </TD> </TR>
+	<TR> <TD> Segunda chance - 21/11 </TD> </TR>
+	<TR> <TD> Avaliação Final - 10/12 </TD> </TR>
       </TABLE>
   </TD> </TR>
 <!-- Fim Provas -->
@@ -86,6 +90,20 @@
 
 <TR> <TD> &nbsp; </TD> </TR>
 
+<!-- Inicio Exercicios -->
+  <TR> <TD>
+      <TABLE>
+	<TH ALIGN='left' STYLE='color:#BB0000;font-size:20px'>Exercícios</TH>
+	<TR>
+	  <TD> Agosto: </TD>
+	  <TD> <A HREF='https://www.dropbox.com/sh/9m1306ecphr9ukm/AAChtfK3k2CIcjGnNqYXpiafa/ex1-mc.pdf'>1</A> </TD>
+	</TR>
+      </TABLE>
+  </TD> </TR>
+<!-- Fim Exercicios -->
+
+<TR> <TD> &nbsp; </TD> </TR>
+
 <!-- Inicio Bibliografia -->
   <TR> <TD>
       <TABLE>
@@ -94,13 +112,18 @@
 
         <TR> <TD> <A ID='quart'>[2]</A> A. Quarteroni, F. Saleri e P. Gervasio, "Scientific Computing with Matlab and Octave". (ver algumas páginas na <A HREF='http://www.amazon.com/Scientific-Computing-Computational-Science-Engineering/dp/364245366X/ref=sr_1_1?ie=UTF8&qid=1406057149&sr=8-1&keywords=scientific+computing+octave'>Amazon</A>)</TD> </TR>
 
-        <TR> <TD> [3] <A ID='octave' HREF='http://www.gnu.org/software/octave'>Página oficial do GNU Octave</A>. </TD> </TR>
+	<TR> <TD> <A ID='marcia'>[3]</A> Márcia A. Gomes Ruggiero e
+	    Vera Lúcia da Rocha Lopes, "Cálculo Numérico, aspectos
+	    teóricos e computacionais", Biblioteca central: 518
+	    R931c. </TD> </TR>
 
-        <TR> <TD> [4] <A HREF='http://www.gnu.org/software/octave/doc/interpreter/index.html'>Página de ajuda do GNU Octave</A>. </TD> </TR>
+        <TR> <TD> [4] <A ID='octave' HREF='http://www.gnu.org/software/octave'>Página oficial do GNU Octave</A>. </TD> </TR>
 
-        <TR> <TD> [5] <A HREF='http://wiki.octave.org/Octave_for_Windows#Octave_on_Cygwin'>Como instalar o Octave no Cygwin (Windows)</A>. </TD> </TR>
+        <TR> <TD> [5] <A HREF='http://www.gnu.org/software/octave/doc/interpreter/index.html'>Página de ajuda do GNU Octave</A>. </TD> </TR>
 
-        <TR> <TD> [6] <A HREF='https://sites.google.com/site/domainmathide/home'>Interface gráfica para o Octave no Windows</A>. </TD> </TR>
+        <TR> <TD> [6] <A HREF='http://wiki.octave.org/Octave_for_Windows#Octave_on_Cygwin'>Como instalar o Octave no Cygwin (Windows)</A>. </TD> </TR>
+
+        <TR> <TD> [7] <A HREF='https://sites.google.com/site/domainmathide/home'>Interface gráfica para o Octave no Windows</A>. </TD> </TR>
 
       </TABLE>
   </TD> </TR>
@@ -121,11 +144,12 @@
 <TR> <TD ALIGN='center'>
 
 <TABLE WIDTH="100%">
-<TR> <TD ALIGN='center'> <!-- INICIO COLUNA TURMA 1 -->
+<TR> <TD WIDTH="50%" ALIGN='center'> <!-- INICIO COLUNA TURMA 1 -->
 
 <TABLE CLASS='content_table'> <!-- Inicio content-table 1 -->
 <TH ALIGN='center' COLSPAN=2> Turma 1 </TH>
-<TR> <TD ALIGN='center' VALIGN='top'>
+<!-- -->
+<TR> <TD WIDTH="50%" ALIGN='center' VALIGN='top'>
 
 <TABLE CLASS='day'>
 	<TH> Aula 1: 23/07 </TH>
@@ -137,19 +161,42 @@
 <TABLE CLASS='day'>
         <TH> Aula 2: 24/07 </TH>
 <TR> <TD> O Octave e sua interface </TD> </TR>
-<TR> <TD> Escrevendo na tela </TD> </TR>
+<TR> <TD> Algoritmos e variáveis </TD> </TR>
 <TR> <TD> Variáveis, matrizes e vetores </TD> </TR>
 </TABLE>
 
 </TD> </TR>
 
+<!-- -->
+<TR> <TD ALIGN='center' VALIGN='top'>
+
+<TABLE CLASS='day'>
+	<TH> Aula 3: 30/07 </TH>
+<TR> <TD> Tipo de variáveis </TD> </TR>
+<TR> <TD> Entrada e saída </TD> </TR>
+<TR> <TD> Precisão </TD> </TR>
+<TR> <TD> <A HREF='https://www.dropbox.com/sh/9m1306ecphr9ukm/AAChtfK3k2CIcjGnNqYXpiafa/ex1-mc.pdf'>Exercícios</A> </TD> </TR>
+</TABLE>
+
+</TD> <TD ALIGN='center' VALIGN='top'>
+
+<TABLE CLASS='day'>
+        <TH> Aula 4: 31/07 </TH>
+<TR> <TD> Matrizes e suas funções </TD> </TR>
+<TR> <TD> Exercícios </TD> </TR>
+</TABLE>
+
+</TD> </TR>
+
 </TABLE> <!-- Fim content-table 1 -->
-</TD> <!-- FIM COLUNA TURMA 31 -->
+</TD> <!-- FIM COLUNA TURMA 1 -->
 
 <TD ALIGN='center'> <!-- INICIO COLUNA TURMA 31 -->
 <TABLE CLASS='content_table'> <!-- Inicio content-table 31 -->
 <TH ALIGN='center' COLSPAN=2> Turma 31 </TH>
-<TR> <TD ALIGN='center' VALIGN='top'>
+
+<!-- -->
+<TR> <TD WIDTH="50%" ALIGN='center' VALIGN='top'>
 
 <TABLE CLASS='day'>
 	<TH> Aula 1: 23/07 </TH>
@@ -168,6 +215,28 @@
 
 </TD> </TR>
 
+<!-- -->
+<TR> <TD ALIGN='center' VALIGN='top'>
+
+<TABLE CLASS='day'>
+	<TH> Aula 3: 30/07 </TH>
+<TR> <TD> Tipo de variáveis </TD> </TR>
+<TR> <TD> Entrada e saída </TD> </TR>
+<TR> <TD> Precisão </TD> </TR>
+<TR> <TD> <A HREF='https://www.dropbox.com/sh/9m1306ecphr9ukm/AAChtfK3k2CIcjGnNqYXpiafa/ex1-mc.pdf'>Exercícios</A> </TD> </TR>
+</TABLE>
+
+</TD> <TD ALIGN='center' VALIGN='top'>
+
+<TABLE CLASS='day'>
+        <TH> 01/08 </TH>
+<TR> <TD> <B> Não haverá aula! </B> </TD> </TR>
+<TR> <TD> Exercícios de matrizes e suas funções </TD> </TR>
+
+</TABLE>
+
+</TD> </TR>
+
 </TABLE> <!-- Fim content-table 31 -->
 </TD> </TR>
 </TABLE>  <!-- FIM COLUNA TURMA 31 -->
@@ -178,6 +247,6 @@
 <hr>
 <address></address>
 <!-- hhmts start -->
-Última atualização: 23 de julho de 2014.
+Última atualização: 28 de julho de 2014.
 <!-- hhmts end -->
 </body> </html>
