@@ -1,29 +1,30 @@
 BODY{
    font-family: Verdana, Arial;
    font-size: 13px;
-   background-color: #B0E0E6;
+   color: #BDD7DA;
+   background-color: #6E9FA6;
 }
 
 A{
-   color: #000000;
+   color: #BDD7DA;
 }
 
 A:visited{
-   color: #000000;
+   color: #BDD7DA;
 }
 
 A:hover{
-  color: #003399;
+  color: #96BCC2;
 }
 
 TABLE.main_table{
-border: 1px #FF0000 solid;
+border: 1px #36767F solid;
 width: 100%;
 }
 
 TABLE.content_table{
-border: 1px #000000 solid;
-background-color: #EEEEEE;
+border: 1px #36767F solid;
+background-color: #4F8991;
 Width: 80%;
 text-align: left;
 }
@@ -44,7 +45,7 @@ width: 100%;
 
 TABLE.day TH{
 text-align: center;
-background-color: #F3F781;
+background-color: #96BCC2;
 }
 
 PRE.code {
