@@ -6,7 +6,8 @@ BODY{
 }
 
 A{
-   color: #BDD7DA;
+    color: #BDD7DA;
+    text-decoration: underline;
 }
 
 A:visited{
