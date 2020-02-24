@@ -7,7 +7,13 @@
 
 <title>Francisco N. C. Sobral's Home Page</title>
 
-<LINK REL=STYLESHEET HREF="padrao.css" TYPE="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <LINK REL=STYLESHEET HREF="padrao.css" TYPE="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>    
 
 <STYLE>
 
@@ -55,85 +61,160 @@ else {
 
 <body>
 
-<TABLE CLASS='main_table' ID='main_table'> 
+  <DIV CLASS="container-fluid">
+    
+    <DIV CLASS="row">
+      <DIV CLASS="col-8"><H1>Publications</H1></DIV>
+      <DIV CLASS="col-3"> </DIV>
+      <DIV CLASS="col-1"><A HREF='index.html'> Home </A></DIV>
+    </DIV>
 
-<TR> <TD ALIGN='right'> <A HREF='index.html'> Main page </A> </TD> </TR>
+    <DIV class="bg-primary">
+      Papers
+    </DIV>
 
-<TR>
-<TD><h1>Publications</h1></TD>
-</TR>
+    <UL class="list-group">
 
-<TR CLASS='title_sep'> <TD> Papers </TD></TR>
+      <LI class="list-group-item list-group-item-action list-group-item-secondary" >
+         E. V. Castelani, R. Lopes, W. V. I. Shirabayashi and
+         F. N. C. Sobral, "A robust method based on LOVO functions for
+         solving least squares problems", 2019. <A HREF="#" data-toggle="collapse" data-target="#castelani2019"><SPAN class="badge badge-primary"> Abstract </SPAN></A> <A class="text-secondary" HREF="http://www.optimization-online.org/DB_FILE/2019/11/7497.pdf"> <SPAN class="badge badge-success">Technical
+          Report</SPAN></A>
+      </LI>
 
-<TR><TD> E. V. Castelani, R. Lopes, W. V. I. Shirabayashi and
-    F. N. C. Sobral, "A robust method based on LOVO functions for solving
-    least squares problems", 2019.
-    <A HREF='#' ONCLICK='aparece(this,"The robust adjustment of nonlinear models to data is considered in this paper. When data comes from real experiments, it is possible that measurement errors cause the appearance of discrepant values, which should be ignored when adjusting models to them. This work presents a Lower Order-value Optimization (LOVO) version of the Levenberg-Marquardt algorithm, which is well suited to deal with outliers in fitting problems. A general algorithm is presented and convergence to stationary points is demonstrated. Numerical results show that the algorithm is successfully able to detect and ignore outliers without too many specific parameters. Parallel and distributed executions of the algorithm are also possible, allowing for the use of larger datasets. Comparison against publicly available robust algorithms shows that the present approach is able to find better adjustments in well known statistical models.")'>Abstract</A>
-    <A HREF="http://www.optimization-online.org/DB_FILE/2019/11/7497.pdf">Technical
-      Report</A>.
-    <!-- The Technical Report is a pre-print of an article -->
-    <!-- published in Computational Optimization and Applications. The -->
-    <!-- final authenticated version is freely available online -->
-    <!-- at: <A HREF="https://doi.org/10.1007/s10589-019-00102-z">https://doi.org/10.1007/s10589-019-00102-z</A>. -->
-    <!-- TODO: This is a post-peer-review, pre-copyedit version of an
-    article published in [insert journal title]. The final
-    authenticated version is available online at:
-    http://dx.doi.org/[insert DOI] -->
-</TD></TR>
+        <DIV ID="castelani2019" class="collapse list-group-item list-group-item-secondary">
+          The robust adjustment of nonlinear models to data is considered in
+          this paper. When data comes from real experiments, it is possible that
+          measurement errors cause the appearance of discrepant values, which
+          should be ignored when adjusting models to them. This work presents a
+          Lower Order-value Optimization (LOVO) version of the
+          Levenberg-Marquardt algorithm, which is well suited to deal with
+          outliers in fitting problems. A general algorithm is presented and
+          convergence to stationary points is demonstrated. Numerical results
+          show that the algorithm is successfully able to detect and ignore
+          outliers without too many specific parameters. Parallel and
+          distributed executions of the algorithm are also possible, allowing
+          for the use of larger datasets. Comparison against publicly available
+          robust algorithms shows that the present approach is able to find
+          better adjustments in well known statistical models.
+        </DIV>
 
-<TR><TD> J. Gondzio and F. N. C. Sobral, "Quasi-Newton Approaches to
-    Interior Point Methods for Quadratic Problems", Computational Optimization and Applications 74, 93–120 (2019).    
-    <A HREF='#' ONCLICK='aparece(this,"Interior Point Methods (IPM) rely on the Newton method for solving systems of nonlinear equations. Solving the linear systems which arise from this approach is the most computationally expensive task of an interior point iteration. If, due to problem&apos;s inner structure, there are special techniques for efficiently solving linear systems, IPMs enjoy fast convergence and are able to solve large scale optimization problems. It is tempting to try to replace the Newton method by quasi-Newton methods. Quasi-Newton approaches to IPMs either are built to approximate the Lagrangian function for nonlinear programming problems or provide an inexpensive preconditioner. In this work we study the impact of using quasi-Newton methods applied directly to the nonlinear system of equations for general quadratic programming problems. The cost of each iteration can be compared to the cost of computing correctors in a usual interior point iteration. Numerical experiments show that the new approach is able to reduce the overall number of matrix factorizations and is suitable for a matrix-free implementation. ")'>Abstract</A>
-    <A HREF="http://www.optimization-online.org/DB_FILE/2018/06/6677.pdf">Technical
-    Report</A>. The Technical Report is a pre-print of an article
+        <!-- -------------------------------------- -->
+        
+      <LI class="list-group-item list-group-item-action list-group-item-secondary" > J. Gondzio and F. N. C. Sobral, "Quasi-Newton Approaches to
+    Interior Point Methods for Quadratic Problems", Computational Optimization and Applications 74, 93-120 (2019).
+        <A HREF="#" data-toggle="collapse" data-target="#gondzio2019">
+          <SPAN class="badge badge-primary"> Abstract </SPAN>
+        </A>
+        <A HREF="http://www.optimization-online.org/DB_FILE/2018/06/6677.pdf">
+          <SPAN class="badge badge-success">Technical Report*</SPAN>
+        </A>
+        <A HREF="https://doi.org/10.1007/s10589-019-00102-z">
+          <SPAN class="badge badge-danger">Article</SPAN>
+        </A>
+        
+      </LI>
+
+        <DIV ID="gondzio2019" class="collapse list-group-item list-group-item-secondary">
+          Interior Point Methods (IPM) rely on the Newton method for solving systems of nonlinear equations. Solving the linear systems which arise from this approach is the most computationally expensive task of an interior point iteration. If, due to problem&apos;s inner structure, there are special techniques for efficiently solving linear systems, IPMs enjoy fast convergence and are able to solve large scale optimization problems. It is tempting to try to replace the Newton method by quasi-Newton methods. Quasi-Newton approaches to IPMs either are built to approximate the Lagrangian function for nonlinear programming problems or provide an inexpensive preconditioner. In this work we study the impact of using quasi-Newton methods applied directly to the nonlinear system of equations for general quadratic programming problems. The cost of each iteration can be compared to the cost of computing correctors in a usual interior point iteration. Numerical experiments show that the new approach is able to reduce the overall number of matrix factorizations and is suitable for a matrix-free implementation. <BR> <BR> *The Technical Report is a pre-print of an article
     published in Computational Optimization and Applications. The
     final authenticated version is freely available online
-    at: <A HREF="https://doi.org/10.1007/s10589-019-00102-z">https://doi.org/10.1007/s10589-019-00102-z</A>.
-</TD></TR>
-
-<TR><TD> L. P. Chabariberi, F. N. C. Sobral and S. M. Peres, "Driving
-Behavior Analysis: An Approach Using Clustering Algorithms", Workshop
+    at: <A class="text-secondary" HREF="https://doi.org/10.1007/s10589-019-00102-z">https://doi.org/10.1007/s10589-019-00102-z</A>.
+        </DIV>
+        
+        <!-- -------------------------------------- -->
+        
+      <LI class="list-group-item list-group-item-action list-group-item-secondary" > L. P. Chabariberi, F. N. C. Sobral and S. M. Peres, "DrivingBehavior Analysis: An Approach Using Clustering Algorithms", Workshop
 on undergraduate research on Information Systems, SBSI, 15, Companion
 Proceedings of the 15th Brazilian Symposium on Information
 Systems. Porto Alegre: Sociedade Brasileira de Computação,
-pp. 25-28. ISSN 2177-9384, 2019.
-    <A HREF='#' ONCLICK='aparece(this,"The discovery and characterization of driving behavior profiles can be useful to support the optimization of processes for insurance companies or fleet managers. The evolution of ubiquitous computing and data analysis techniques have made such tasks possible. In this paper, we present a study on the analysis of driving behavior through clustering algorithms on a real-world dataset. We applied the k-Means++ and Spectral Clustering algorithms that came up with results that showed: the existence of less and more aggressive behavior profiles; potential to discover more profiles since preliminary quantitative evaluation indicated good quality in clustering with four profiles.")'>Abstract</A>
-    <A HREF="https://doi.org/10.5753/sbsi.2019.7433">Extended abstract</A>.
-</TD></TR>
+        pp. 25-28. ISSN 2177-9384, 2019       
+        <A HREF="#" data-toggle="collapse" data-target="#chabariberi2019">
+          <SPAN class="badge badge-primary"> Abstract </SPAN>
+        </A>
+        <A HREF="https://doi.org/10.5753/sbsi.2019.7433">
+          <SPAN class="badge badge-danger">Extended abstract</SPAN>
+        </A>
+      </LI>
+      
+      <DIV ID="chabariberi2019" class="collapse list-group-item list-group-item-secondary">
+        The discovery and characterization of driving behavior profiles can be useful to support the optimization of processes for insurance companies or fleet managers. The evolution of ubiquitous computing and data analysis techniques have made such tasks possible. In this paper, we present a study on the analysis of driving behavior through clustering algorithms on a real-world dataset. We applied the k-Means++ and Spectral Clustering algorithms that came up with results that showed: the existence of less and more aggressive behavior profiles; potential to discover more profiles since preliminary quantitative evaluation indicated good quality in clustering with four profiles.
+      </DIV>
 
-<TR><TD> P. S. Ferreira, E. W. Karas, M. Sachine and F. N. C. Sobral,
-    "Global convergence of a derivative-free inexact restoration
+      <!-- -------------------------------------- -->
+        
+      <LI class="list-group-item list-group-item-action list-group-item-secondary" > P. S. Ferreira, E. W. Karas, M. Sachine and F. N. C. Sobral, "Global convergence of a derivative-free inexact restoration
     filter algorithm for nonlinear programming", Optimization, 66(2),
     pp. 271-292, 2017.
+        <A HREF="#" data-toggle="collapse" data-target="#ferreira2017">
+          <SPAN class="badge badge-primary"> Abstract </SPAN>
+        </A>
+        <A HREF="http://www.optimization-online.org/DB_FILE/2015/07/5024.pdf">
+          <SPAN class="badge badge-success">Technical Report</SPAN>
+        </A>
+        <A HREF="https://doi.org/10.1080/02331934.2016.1263629">
+          <SPAN class="badge badge-danger">Article</SPAN>
+        </A>
+      </LI>
+      
+      <DIV ID="ferreira2017" class="collapse list-group-item list-group-item-secondary">
+        In this work we present an algorithm for solving constrained optimization problems that does not make explicit use of the objective function derivatives. The algorithm mixes an inexact restoration framework with filter techniques, where the forbidden regions can be given by the flat or slanting filter rule. Each iteration is decomposed in two independent phases: a feasibility phase which reduces an infeasibility measure without evaluations of the objective function, and an optimality phase which reduces the objective function value. As the derivatives of the objective function are not available, the optimality step is computed by derivative-free trust-region internal iterations. Any technique to construct the trust-region models can be used since the gradient of the model is a reasonable approximation of the gradient of the objective function at the current point. Assuming this and classical assumptions, we prove that the full steps are efficient in the sense that near a feasible nonstationary point, the decrease in the objective function is relatively large, ensuring the global convergence results of the algorithm. Numerical experiments show the effectiveness of the proposed method.
+      </DIV>
 
-    <A HREF='#' ONCLICK='aparece(this,"In this work we present an algorithm for solving constrained optimization problems that does not make explicit use of the objective function derivatives. The algorithm mixes an inexact restoration framework with filter techniques, where the forbidden regions can be given by the flat or slanting filter rule. Each iteration is decomposed in two independent phases: a feasibility phase which reduces an infeasibility measure without evaluations of the objective function, and an optimality phase which reduces the objective function value. As the derivatives of the objective function are not available, the optimality step is computed by derivative-free trust-region internal iterations. Any technique to construct the trust-region models can be used since the gradient of the model is a reasonable approximation of the gradient of the objective function at the current point. Assuming this and classical assumptions, we prove that the full steps are efficient in the sense that near a feasible nonstationary point, the decrease in the objective function is relatively large, ensuring the global convergence results of the algorithm. Numerical experiments show the effectiveness of the proposed method. ")'>Abstract</A>
-    <A HREF="https://doi.org/10.1080/02331934.2016.1263629">Article</A>
-    <A HREF="http://www.optimization-online.org/DB_FILE/2015/07/5024.pdf">Submitted version</A>
-</TD></TR>
-
-<TR><TD> L. F. Bueno, A. Friedlander, J. M. Mart&iacute;nez, and
+      <!-- -------------------------------------- -->
+        
+      <LI class="list-group-item list-group-item-action list-group-item-secondary" > L. F. Bueno, A. Friedlander, J. M. Mart&iacute;nez, and
     F. N. C. Sobral, "Inexact Restoration method for Derivative-Free
     Optimization with smooth constraints", SIAM Journal on
     Optimization, 23(2), pp. 1189-1213, 2013.
+        <A HREF="#" data-toggle="collapse" data-target="#bueno2013">
+          <SPAN class="badge badge-primary"> Abstract </SPAN>
+        </A>
+        <A HREF='files/bfms.pdf'>
+          <SPAN class="badge badge-success">Technical Report</SPAN>
+        </A>
+      </LI>
+      
+      <DIV ID="bueno2013" class="collapse list-group-item list-group-item-secondary">
+        A new method is introduced for solving constrained optimization problems in which the derivatives of the constraints are available but the derivatives of the objective function are not. The method is based on the Inexact Restoration framework, by means of which each iteration is divided in two phases. In the first phase one considers only the constraints, in order to improve feasibility. In the second phase one minimizes a suitable objective function subject to a linear approximation of the constraints. The second phase must be solved using derivative-free methods. An algorithm introduced recently by Kolda, Lewis, and Torczon for linearly constrained derivative-free optimization is employed for this purpose. Under usual assumptions, convergence to stationary points is proved. A computer implementation is described and numerical experiments are presented.
+      </DIV>
 
-    <A HREF='#' ONCLICK='aparece(this,"A new method is introduced for solving constrained optimization problems in which the derivatives of the constraints are available but the derivatives of the objective function are not. The method is based on the Inexact Restoration framework, by means of which each iteration is divided in two phases. In the first phase one considers only the constraints, in order to improve feasibility. In the second phase one minimizes a suitable objective function subject to a linear approximation of the constraints. The second phase must be solved using derivative-free methods. An algorithm introduced recently by Kolda, Lewis, and Torczon for linearly constrained derivative-free optimization is employed for this purpose. Under usual assumptions, convergence to stationary points is proved. A computer implementation is described and numerical experiments are presented.")'>Abstract</A>
-    <A HREF='files/bfms.pdf'>Download submitted version</A>
-</TD></TR>
-
-<TR><TD> J. M. Mart&iacute;nez and F. N. C. Sobral, "Constrained
+      <!-- -------------------------------------- -->
+        
+      <LI class="list-group-item list-group-item-action list-group-item-secondary" > J. M. Mart&iacute;nez and F. N. C. Sobral, "Constrained
     Derivative-Free Optimization on Thin Domains", Journal of Global
     Optimization, 56(3), pp. 1217-1232, 2013.
+        <A HREF="#" data-toggle="collapse" data-target="#martinez2013">
+          <SPAN class="badge badge-primary"> Abstract </SPAN>
+        </A>
+        <A HREF='files/msskinny.pdf'>
+          <SPAN class="badge badge-success">Technical Report</SPAN>
+        </A>
+      </LI>
+      
+      <DIV ID="martinez2013" class="collapse list-group-item list-group-item-secondary">
+        Many derivative-free methods for constrained problems are not efficient for minimizing functions on \"thin\" domains. Other algorithms, like those based on Augmented Lagrangians, deal with thin constraints using penalty-like strategies. When the constraints are computationally inexpensive but highly nonlinear, these methods spend many potentially expensive objective function evaluations motivated by the difficulties of improving feasibility. An algorithm that handles efficiently this case is proposed in this paper. The main iteration is split into two steps: restoration and minimization. In the restoration step the aim is to decrease infeasibility without evaluating the objective function. In the minimization step the objective function <I>f</I> is minimized on a relaxed feasible set. A global minimization result will be proved and computational experiments showing the advantages of this approach will be presented.
+      </DIV>
 
-    <A HREF='#' ONCLICK='aparece(this,"Many derivative-free methods for constrained problems are not efficient for minimizing functions on \"thin\" domains. Other algorithms, like those based on Augmented Lagrangians, deal with thin constraints using penalty-like strategies. When the constraints are computationally inexpensive but highly nonlinear, these methods spend many potentially expensive objective function evaluations motivated by the difficulties of improving feasibility. An algorithm that handles efficiently this case is proposed in this paper. The main iteration is split into two steps: restoration and minimization. In the restoration step the aim is to decrease infeasibility without evaluating the objective function. In the minimization step the objective function <I>f</I> is minimized on a relaxed feasible set. A global minimization result will be proved and computational experiments showing the advantages of this approach will be presented.")'>Abstract</A>
-    <A HREF='files/msskinny.pdf'>Download submitted version</A>
-</TD></TR>
-
-<TR><TD>
-    E. G. Birgin and F. N. C. Sobral, "Minimizing the object 
+      <!-- -------------------------------------- -->
+        
+      <LI class="list-group-item list-group-item-action list-group-item-secondary" > E. G. Birgin and F. N. C. Sobral, "Minimizing the object 
     dimensions in circle and sphere packing problems", Computers
     & Operations Research 35, pp. 2357-2375, 2008.
-    <A HREF='#' ONCLICK='aparece(this,"Given a fixed set of identical or different-sized circular items, the problem we deal with consists on finding the smallest object within which the items can be packed. Circular, triangular, squared, rectangular and also strip objects are considered. Moreover, 2D and 3D problems are treated. Twice-differentiable models for all these problems are presented. A strategy to reduce the complexity of evaluating the models is employed and, as a consequence, instances with a large number of items can be considered. Numerical experiments show the flexibility and reliability of the new unified approach.")'>Abstract</A>
-</TD></TR>
+
+        <A HREF="#" data-toggle="collapse" data-target="#birgin2008">
+          <SPAN class="badge badge-primary"> Abstract </SPAN>
+        </A>
+      </LI>
+      
+      <DIV ID="birgin2008" class="collapse list-group-item list-group-item-secondary">
+        Given a fixed set of identical or different-sized circular items, the problem we deal with consists on finding the smallest object within which the items can be packed. Circular, triangular, squared, rectangular and also strip objects are considered. Moreover, 2D and 3D problems are treated. Twice-differentiable models for all these problems are presented. A strategy to reduce the complexity of evaluating the models is employed and, as a consequence, instances with a large number of items can be considered. Numerical experiments show the flexibility and reliability of the new unified approach.
+      </DIV>
+    </UL>
+
+  </DIV>
+  
+<TABLE CLASS='main_table' ID='main_table'> 
 
 <TR CLASS='title_sep'> <TD> Software </TD></TR>
 
