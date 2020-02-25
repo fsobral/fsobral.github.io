@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     
     <LINK REL=STYLESHEET HREF="padrao.css" TYPE="text/css">
+    <link rel="icon" type="image/png" href="images/favicon-152.png">
+    <link rel="icon" type="image/ico" href="images/favicon-152.ico">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -212,54 +214,104 @@ Systems. Porto Alegre: Sociedade Brasileira de Computação,
       </DIV>
     </UL>
 
-  </DIV>
-  
-<TABLE CLASS='main_table' ID='main_table'> 
+    <DIV class="bg-primary">
+      Software
+    </DIV>
 
-<TR CLASS='title_sep'> <TD> Software </TD></TR>
+    <UL class="list-group">
 
-<TR> <TD> E. V. Castelani, R. Lopes, W. Shirabayashi, and
+      <!-- -------------------------------------- -->
+        
+      <LI class="list-group-item list-group-item-action list-group-item-secondary" > E. V. Castelani, R. Lopes, W. Shirabayashi, and
     F. N. C. Sobral, "RAFF.jl: Robust Algebraic Fitting Function in
     Julia", Journal of Open Source Software, 4(39),
     1385, 2019.
-    <A HREF='#' ONCLICK='aparece(this,"RAFF.jl is a Julia package for the adjustment of a function to a dataset coming from some experiment. This package is an alternative to classical adjustment techniques such as linear and nonlinear regression. The goal of this package is to find robust adjustments free from the influence of possible outliers (discrepant points of the adjustment).")'>Abstract</A>  <A HREF="https://doi.org/10.21105/joss.01385">Download</A>
-</TD></TR>
+        <A HREF="#" data-toggle="collapse" data-target="#castelaniraff2019">
+          <SPAN class="badge badge-primary"> Abstract </SPAN>
+        </A>
+        <A HREF="https://doi.org/10.21105/joss.01385">
+          <SPAN class="badge badge-danger">Article</SPAN>
+        </A>
+      </LI>
+      
+      <DIV ID="castelaniraff2019" class="collapse list-group-item list-group-item-secondary">
+        RAFF.jl is a Julia package for the adjustment of a function to a dataset coming from some experiment. This package is an alternative to classical adjustment techniques such as linear and nonlinear regression. The goal of this package is to find robust adjustments free from the influence of possible outliers (discrepant points of the adjustment).
+      </DIV>
 
-<TR CLASS='title_sep'> <TD> Other works </TD></TR>
+    </UL>
 
-<TR><TD> 
-F. N. C. Sobral,"Derivative-free optimization on thin domains", Advisor: Prof. José Mario Martínez, Ph. D. Thesis,
-Institute of Mathematics, Statistics and Scientific Computation, State University of Campinas, Campinas, Sao
-Paulo, Brazil, 2012. (in Portuguese)
-<A HREF='#' ONCLICK='aparece(this,"Derivative-free optimization problems arise from models whose derivatives of some functions are not available. This information is unavailable due to extremely complex and black-box functions, originated from simulation procedures, or even to user inability. Following the growth in the number of applications, the number of derivative-free algorithms has increased in the last years. However, few algorithms are able to handle thin feasible domains efficiently, for example, in the presence of equality nonlinear constraints. In the present work, we describe the theory and implementation of two algorithms capable of dealing with thin-constrained derivative-free problems. Their definition considers that the objective function evaluation is the most expensive part of the problem. Based on this principle, the process of solving a problem is split into two phases. In the restoration phase, we try to improve the feasibility without evaluating the objective function. In the minimization phase, the aim is to decrease the objective function value by using well-established algorithms in order to solve derivative-free problems with simple constraints. The first algorithm uses Inexact Restoration ideas together with a decreasing infeasibility tolerance. Under the usual hypotheses of direct search methods, we show global minimization results. The second algorithm extends to the derivative-free case all the theoretical results obtained in a recent line-search Inexact Restoration algorithm. In this approach, only the derivatives of the objective function are not available. We perform numerical experiments to show the advantages of each algorithm, in particular when comparing with penalty-like algorithms.")'>Abstract</A>
-<A HREF='http://www.bibliotecadigital.unicamp.br/document/?code=000854936&opt=1'>Download</A> (<A HREF='docs/dfthesis.pdf'>Alternative download</A>)
-</TR> </TD>
 
-<TR><TD> 
-F. N. C. Sobral,"Bilevel programming: reformulation using KKT
-conditions", Advisor: Prof. Ernesto G. Birgin, Master Degree Thesis,
-Institute of Mathematics and Statistics, University of Sao Paulo, Sao
-Paulo, Brazil, 2008. (in Portuguese)
-<A HREF='#' ONCLICK='aparece(this,"In problems of hierarchical nature, the choices made by the most influential level - the so-called leader - affect the behavior of the lower levels. For each one of the leader&#039;s decisions there is a response from the lower levels, which maximizes the value of their respective objectives. These optimal choices, in return, may have influence in the results achieved by the leader, which also wants to make the optimal choices. In mathematical programming, this kind of problem is described as a multilevel programming problem. The present work considers a specific kind of multilevel problem: the bilevel mathematical problem. We study a resolution technique which consists in replacing the lower level problem by its necessary first order conditions, which can be formulated in various ways, as complementarity constraints occur and are modified. The new reformulated problem is a nonlinear programming problem which can be solved by classical optimization methods. Using first and second order optimality conditions, we show the relations between the original bilevel problem and the reformulated problem. We apply the described technique to solve a set of bilevel problems taken from the literature, analyse their behavior and discuss strategies to prevent undesirable difficulties that may arise.")'>Abstract</A>
-<A HREF='http://www.teses.usp.br/teses/disponiveis/45/45134/tde-11042008-163904/'> Download</A>
-</TR> </TD>
+    <DIV class="bg-primary">
+      Other works
+    </DIV>
 
-<TR> <TD>
-<DIV>
-   F. N. C. Sobral, "Minimizando objetos em problemas de
-   empacotamento", Advisor: Prof. Ernesto G. Birgin, Undergraduate
-   work, Institute of Mathematics and Statistics, University of Sao
-   Paulo, Sao Paulo, Brazil, 2006. (in Portuguese)
-   <A HREF='docs/monografia.ps'>Download PS</A>
-</DIV>
-</TD></TR>
+    <UL class="list-group">
 
-</TABLE>
+      <!-- -------------------------------------- -->
+        
+      <LI class="list-group-item list-group-item-action list-group-item-secondary" > F. N. C. Sobral,"Derivative-free
+        optimization on thin domains", Advisor: Prof. José Mario Martínez,
+        Ph. D. Thesis, Institute of Mathematics, Statistics and Scientific
+        Computation, State University of Campinas, Campinas, Sao Paulo,
+        Brazil, 2012. (in Portuguese)
+        
+        <A HREF="#" data-toggle="collapse" data-target="#sobral2012">
+          <SPAN class="badge badge-primary"> Abstract </SPAN>
+        </A>
+        <A HREF='docs/dfthesis.pdf'>
+          <SPAN class="badge badge-success"> Alternative version </SPAN>
+        </A>
+        <A HREF='http://www.bibliotecadigital.unicamp.br/document/?code=000854936&opt=1'>
+          <SPAN class="badge badge-danger">Thesis</SPAN>
+        </A>
+      </LI>
+      
+      <DIV ID="sobral2012" class="collapse list-group-item list-group-item-secondary">
+        Derivative-free optimization problems arise from models whose derivatives of some functions are not available. This information is unavailable due to extremely complex and black-box functions, originated from simulation procedures, or even to user inability. Following the growth in the number of applications, the number of derivative-free algorithms has increased in the last years. However, few algorithms are able to handle thin feasible domains efficiently, for example, in the presence of equality nonlinear constraints. In the present work, we describe the theory and implementation of two algorithms capable of dealing with thin-constrained derivative-free problems. Their definition considers that the objective function evaluation is the most expensive part of the problem. Based on this principle, the process of solving a problem is split into two phases. In the restoration phase, we try to improve the feasibility without evaluating the objective function. In the minimization phase, the aim is to decrease the objective function value by using well-established algorithms in order to solve derivative-free problems with simple constraints. The first algorithm uses Inexact Restoration ideas together with a decreasing infeasibility tolerance. Under the usual hypotheses of direct search methods, we show global minimization results. The second algorithm extends to the derivative-free case all the theoretical results obtained in a recent line-search Inexact Restoration algorithm. In this approach, only the derivatives of the objective function are not available. We perform numerical experiments to show the advantages of each algorithm, in particular when comparing with penalty-like algorithms.        
+      </DIV>
+
+      <!-- -------------------------------------- -->
+        
+      <LI class="list-group-item list-group-item-action list-group-item-secondary" > F. N. C. Sobral,"Bilevel programming: reformulation using KKT
+        conditions", Advisor: Prof. Ernesto G. Birgin, Master Degree Thesis,
+        Institute of Mathematics and Statistics, University of Sao Paulo, Sao
+        Paulo, Brazil, 2008. (in Portuguese)
+        
+        <A HREF="#" data-toggle="collapse" data-target="#sobral2008">
+          <SPAN class="badge badge-primary"> Abstract </SPAN>
+        </A>
+        <A HREF='http://www.teses.usp.br/teses/disponiveis/45/45134/tde-11042008-163904/'>
+          <SPAN class="badge badge-danger">Dissertation</SPAN>
+        </A>
+      </LI>
+      
+      <DIV ID="sobral2008" class="collapse list-group-item list-group-item-secondary">
+        In problems of hierarchical nature, the choices made by the most influential level - the so-called leader - affect the behavior of the lower levels. For each one of the leader&#039;s decisions there is a response from the lower levels, which maximizes the value of their respective objectives. These optimal choices, in return, may have influence in the results achieved by the leader, which also wants to make the optimal choices. In mathematical programming, this kind of problem is described as a multilevel programming problem. The present work considers a specific kind of multilevel problem: the bilevel mathematical problem. We study a resolution technique which consists in replacing the lower level problem by its necessary first order conditions, which can be formulated in various ways, as complementarity constraints occur and are modified. The new reformulated problem is a nonlinear programming problem which can be solved by classical optimization methods. Using first and second order optimality conditions, we show the relations between the original bilevel problem and the reformulated problem. We apply the described technique to solve a set of bilevel problems taken from the literature, analyse their behavior and discuss strategies to prevent undesirable difficulties that may arise.        
+      </DIV>
+
+      <!-- -------------------------------------- -->
+        
+      <LI class="list-group-item list-group-item-action list-group-item-secondary" >    F. N. C. Sobral, "Minimizando objetos em problemas de
+        empacotamento", Advisor: Prof. Ernesto G. Birgin, Undergraduate
+        work, Institute of Mathematics and Statistics, University of Sao
+        Paulo, Sao Paulo, Brazil, 2006. (in Portuguese)
+        
+        <A HREF='docs/monografia.ps'>
+          <SPAN class="badge badge-danger">Download PS</SPAN>
+        </A>
+      </LI>
+      
+    </UL>
+
+  </DIV>
+
+  
+  
       
 <hr>
 <address></address>
 <!-- hhmts start -->
-Last modified: April 2019
+Last modified: February 2020
 <!-- hhmts end -->
 </body> </html>
 
