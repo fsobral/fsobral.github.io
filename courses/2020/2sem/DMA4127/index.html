@@ -1,0 +1,277 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitinal//EN">
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Nonlinear optimization 2020</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <LINK REL=STYLESHEET HREF="../../../../padrao.css" TYPE="text/css">
+    
+  </head>
+
+  <body>
+
+    <DIV CLASS="main_table container-fluid">
+
+      <DIV CLASS="row">
+        <DIV CLASS="col-8"><H1>DMA4127 - Nonlinear Optimization</H1></DIV>
+        <DIV CLASS="col-3"> </DIV>
+        <DIV CLASS="col-1"><A HREF='../../../../index.html'> Home </A></DIV>
+      </DIV>
+
+      <DIV CLASS="row container">
+        <DIV CLASS="col-8">
+          <DIV CLASS="row"> <DIV CLASS="col-md-2"> Professor: </DIV> <DIV CLASS="col"> Francisco N. C. Sobral </DIV> </DIV>
+          <DIV CLASS="row"> <DIV CLASS="col-md-2"> Room: </DIV> <DIV CLASS="col"> Room 211 Building F67 </DIV> </DIV>
+          <DIV CLASS="row"> <DIV CLASS="col-md-2"> E-mail: </DIV> <DIV CLASS="col"> <IMG SRC='../../../../images/mail.gif' ALIGN='top' CLASS="img-fluid" WIDTH='120'> </DIV> </DIV>
+          <DIV CLASS="row">
+            <DIV CLASS="col-md-2"> Teaching times: </DIV>
+            <DIV CLASS="col"> Tuesdays (asynchronous studies) 7:45 - 9:45 and Thursdays (online class) 13:30 - 15:30. Implementation discussions on some Thursdays 15:30 - 16:30
+              <BR><SPAN CLASS="text-warning"> Thursdays GoogleMeet link: <a href="https://meet.google.com/dyc-nhmy-fdx">https://meet.google.com/dyc-nhmy-fdx</a> </SPAN> </DIV>
+          </DIV>
+        </DIV>
+      </DIV>
+
+      <DIV class="p-2 font-weight-bold"> Extras </DIV>
+
+      <DIV class="row container">
+        <DIV class="col-8">
+          <DIV> <A HREF="http://www.ime.unicamp.br/~martinez/mslivro.pdf">Métodos computacionais de otimização (Martínez and Santos) </A></DIV>
+          <DIV> <A HREF="https://www.ime.unicamp.br/~friedlan/livro.pdf">Elementos de programação não linear (Friedlander) </A></DIV>
+        </DIV>
+      </DIV>
+      
+      <HR>
+
+      <H2 class="text-center">Content</H2>
+      
+      <DIV CLASS="mx-auto card-columns">
+
+	<DIV class="card bg-info">
+          <DIV class="card-body">
+            <DIV class="card-title mx-auto"> Week 1 </DIV>
+            <DIV class="card-text ml-n3">
+	      <UL>
+                <LI> Introduction </LI>
+                <LI> Nonlinear equations </LI>
+                <LI>
+                Slides: <a href="https://drive.google.com/file/d/1uYUkwhsQ04DMRe08ldTz417TNBRaLSUw/view?usp=drivesdk">Introduction</a> <SPAN class="badge badge-danger">V1</SPAN>
+	      </UL>
+            </DIV>
+          </DIV>
+        </DIV>
+
+        <DIV class="card bg-info" style="visibility:hidden">
+          <DIV class="card-body">
+            <DIV class="card-title mx-auto"> Week 2 </DIV>
+            <DIV class="card-text ml-n3">
+              <UL>
+                <LI> Newton and quasi-Newton
+                    methods <SPAN class="badge badge-success">ENG</SPAN> </LI>
+                <LI> Linear convergence <SPAN class="badge badge-success">ENG</SPAN> </LI>
+                <LI> Implementation details <BR> <A HREF="newton_nleq.jl">newton_nleq.jl</A>
+		  <BR> <A HREF="https://www.caam.rice.edu/~yzhang/caam454/nls/MGH.pdf">The
+		    Moré, Garbow and Hillstrom test problems</A> </LI>
+
+              </UL>
+            </DIV>
+          </DIV>
+        </DIV>
+        
+        <DIV class="card bg-info" style="visibility:hidden">
+          <DIV class="card-body">
+            <DIV class="card-title mx-auto"> Week 3 </DIV>
+            <DIV class="card-text ml-n3">
+              <UL>
+                <LI> Implementation details <BR> <A HREF="http://pi.math.cornell.edu/~web6140/TopTenAlgorithms/QRUpdate.html#Fast-QR-factorization-after-a-rank-one-update">QR update</A> </LI>
+                <LI> Linear and quadratic convergence of Newton <SPAN class="badge badge-success">ENG</SPAN> </LI>
+                <LI> Convergence of quasi-Newton <SPAN class="badge badge-success">ENG</SPAN> </LI>
+		<LI> COLUMN and ICUM quasi-Newton methods - see pg. 107 of <A HREF="https://doi.org/10.1016/S0377-0427(00)00434-9">Martínez, 2000</A> or pg. 14 <A HREF="http://www.ime.unicamp.br/~martinez/survcam.pdf">here</A>. </LI>
+              </UL>
+            </DIV>
+          </DIV>
+        </DIV>
+
+        <DIV class="card bg-info" style="visibility:hidden">
+          <DIV class="card-body">
+            <DIV class="card-title mx-auto"> Week 4 </DIV>
+            <DIV class="card-text ml-n3">
+              <UL>
+                <LI> Introduction to optimization <SPAN class="badge badge-success">ENG</SPAN> </LI>
+                <LI> Unconstrained optimization <SPAN class="badge badge-success">ENG</SPAN> </LI>
+                <LI> Line-search methods <SPAN class="badge badge-success">ENG</SPAN> </LI>
+              </UL>
+            </DIV>
+          </DIV>
+        </DIV>
+
+        <DIV class="card bg-info" style="visibility:hidden">
+          <DIV class="card-body">
+            <DIV class="card-title mx-auto"> Week 5 </DIV>
+            <DIV class="card-text ml-n3">
+              <UL>
+                <LI> Newton with line search <SPAN class="badge badge-success">ENG</SPAN> </LI>
+                <LI> Quasi-Newton BFGS with line search <SPAN class="badge badge-success">ENG</SPAN> </LI>
+              </UL>
+            </DIV>
+          </DIV>
+        </DIV>
+
+        <DIV class="card bg-info" style="visibility:hidden">
+          <DIV class="card-body">
+            <DIV class="card-title mx-auto"> Week 6 </DIV>
+            <DIV class="card-text ml-n3">
+              <UL>
+                <LI> Implementation of ICUM </LI>
+		<LI> Performance profiles: <A HREF="https://link.springer.com/article/10.1007/s101070100263">Dolan, Moré (2002)</A> and <A HREF="http://dl.acm.org/citation.cfm?doid=2988256.2950048">A note on performance profiles(2016) </A> </LI>
+		<LI> <A HREF="https://doi.org/10.1137/0913025">Comparing solvers for nonlinear systems</A> </LI>
+                <LI> Line searches <SPAN class="badge badge-success">ENG</SPAN> </LI>
+                <LI> Practical stopping criteria <SPAN class="badge badge-success">ENG</SPAN> </LI>
+		<LI> Introduction to trust region algorithms <SPAN class="badge badge-success">ENG</SPAN> </LI>
+              </UL>	      
+	    </DIV>
+          </DIV>
+        </DIV>
+
+        <DIV class="card bg-info" style="visibility:hidden">
+          <DIV class="card-body">
+            <DIV class="card-title mx-auto"> Week 7 </DIV>
+            <DIV class="card-text ml-2">
+              <UL>
+                <LI> The trust region algorithm <SPAN class="badge badge-success">ENG</SPAN> </LI>
+		<LI> Computing the step: Dogleg, Subspace and Steihag's algorithm <SPAN class="badge badge-success">ENG</SPAN> </LI>
+		<LI> The Cauchy point <SPAN class="badge badge-success">ENG</SPAN> </LI>
+              </UL>	      
+            </DIV>
+          </DIV>
+        </DIV>
+
+        <DIV class="card bg-info" style="visibility:hidden">
+          <DIV class="card-body">
+            <DIV class="card-title mx-auto"> Week 8 </DIV>
+            <DIV class="card-text ml-2">
+              <UL>
+                <LI> Introduction to performance profiles </LI>
+		<LI> Convergence of trust-region algorithms <SPAN class="badge badge-success">ENG</SPAN> </LI>
+		<LI> Non-Euclidean norms for trust region <SPAN class="badge badge-success">ENG</SPAN> </LI>
+              </UL>	      
+            </DIV>
+          </DIV>
+        </DIV>
+        
+        <DIV class="card bg-info" style="visibility:hidden">
+          <DIV class="card-body">
+            <DIV class="card-title mx-auto"> Week 9 </DIV>
+            <DIV class="card-text ml-2">
+              <UL>
+                <LI> Linear Conjugate Gradients <SPAN class="badge badge-success">ENG</SPAN> </LI>
+		<LI> <A HREF="https://www.cs.cmu.edu/~quake-papers/painless-conjugate-gradient.pdf">An Introduction to the Conjugate Gradient Method Without the Agonizing Pain</A> </LI>
+		<LI> Introduction to Nonlinear Conjugate Gradients <SPAN class="badge badge-success">ENG</SPAN> </LI>
+              </UL>	      
+            </DIV>
+          </DIV>
+        </DIV>
+        
+        <DIV class="card bg-info" style="visibility:hidden">
+          <DIV class="card-body">
+            <DIV class="card-title mx-auto"> Week 10 </DIV>
+            <DIV class="card-text ml-2">
+	      <UL>
+		<LI> Convergence rate of CG and preconditioners </LI>
+		<LI> Examples of constrained optimization problems <SPAN class="badge badge-success">ENG</SPAN> </LI>
+	      </UL>
+	    </DIV>
+          </DIV>
+        </DIV>
+
+        <DIV class="card bg-info" style="visibility:hidden">
+          <DIV class="card-body">
+            <DIV class="card-title mx-auto"> Week 11 </DIV>
+            <DIV class="card-text ml-2">
+	      <UL>
+		<LI> First-order conditions in constrained optimization <SPAN class="badge badge-success">ENG</SPAN> </LI>
+		<LI> Constraint qualifications <SPAN class="badge badge-success">ENG</SPAN> </LI>
+		<LI> Class: <A HREF="https://www.dropbox.com/s/r0uiroiso2pwptx/first_order_conditions.pdf?dl=0">First order conditions</A>  <SPAN class="badge badge-danger">V3</SPAN> </LI>
+	      </UL>
+	    </DIV>
+          </DIV>
+        </DIV>
+	
+        <DIV class="card bg-info" style="visibility:hidden">
+          <DIV class="card-body">
+            <DIV class="card-title mx-auto"> Week 12 </DIV>
+            <DIV class="card-text ml-2">
+	      <UL>
+		<LI> KKT conditions <SPAN class="badge badge-success">ENG</SPAN> </LI>
+		<LI> Projected gradient methods <SPAN class="badge badge-success">ENG</SPAN> </LI>
+		<LI> Book: <A HREF="http://www.ime.unicamp.br/~martinez/lagraum.pdf">Opúsculo - J. M. Martínez</A> </LI>
+
+                <LI> Class: <A HREF="https://www.dropbox.com/s/k4eeh8209ura8c0/projected_gradient.pdf?dl=0">Projected gradient</A> <SPAN class="badge badge-danger">V4</SPAN> </LI>
+
+	      </UL>
+	    </DIV>
+          </DIV>
+        </DIV>
+	
+        <DIV class="card bg-info" style="visibility:hidden">
+          <DIV class="card-body">
+            <DIV class="card-title mx-auto"> Week 14 </DIV>
+            <DIV class="card-text ml-2">
+	      <UL>
+		<LI> Implementation </LI>
+	      </UL>
+	    </DIV>
+          </DIV>
+        </DIV>
+	
+        <DIV class="card bg-info" style="visibility:hidden">
+          <DIV class="card-body">
+            <DIV class="card-title mx-auto"> Week 15 </DIV>
+            <DIV class="card-text ml-2">
+	      <UL>
+		<LI> Spectral Projected Gradient <SPAN class="badge badge-success">ENG</SPAN> </LI>
+                <LI> <A HREF="http://www.ai7.uni-bayreuth.de/test_problem_coll.pdf">Hock-Schittkowski test set for constrained optimization</A>
+	      </UL>
+	    </DIV>
+          </DIV>
+        </DIV>
+	
+        <DIV class="card bg-info" style="visibility:hidden">
+          <DIV class="card-body">
+            <DIV class="card-title mx-auto"> Week 16 </DIV>
+            <DIV class="card-text ml-2">
+	      <UL>
+                <LI> Implementation discussions </LI>
+		<LI> Gencan <SPAN class="badge badge-success">ENG</SPAN> </LI>
+                <LI> Introduction to Augmented Lagrangians <SPAN class="badge badge-success">ENG</SPAN> </LI>
+                <LI> Class: <A HREF="https://www.dropbox.com/s/burp98piuw5msqn/augmented_lagrangian.pdf?dl=0">Augmented Lagrangian</A> <SPAN class="badge badge-danger">V1</SPAN> </LI>
+	      </UL>
+	    </DIV>
+          </DIV>
+        </DIV>
+
+        <DIV class="card bg-info" style="visibility:hidden">
+          <DIV class="card-body">
+            <DIV class="card-title mx-auto"> Week 17 </DIV>
+	      <UL>
+                <LI> Convergence of trust region algorithms for box
+                constrained problems </LI>
+		<LI> <A HREF="TRopt4.jl">Code</A> </LI>
+	      </UL>
+          </DIV>
+        </DIV>
+      </DIV>
+
+      <hr>
+      <address></address>
+      <!-- hhmts start -->
+      Last Update: November, 27 2019.
+      <!-- hhmts end -->
+  </body>
+
+</html>
