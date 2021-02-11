@@ -3,11 +3,21 @@
 <html>
 <head>
 
-<META http-equiv='Content-Type' content='text/html;charset=UTF-8'>
+  <META http-equiv='Content-Type' content='text/html;charset=UTF-8'>
 
-<title>Francisco N. C. Sobral's Home Page</title>
+  <title>Francisco N. C. Sobral's Home Page</title>
+  
+  <LINK REL=STYLESHEET HREF="padrao.css" TYPE="text/css">
 
-<LINK REL=STYLESHEET HREF="padrao.css" TYPE="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+  <LINK REL=STYLESHEET HREF="padrao.css" TYPE="text/css">
+  <link rel="icon" type="image/png" href="images/favicon-152.png">
+  <link rel="icon" type="image/ico" href="images/favicon-152.ico">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>    
 
 <STYLE>
 
@@ -21,109 +31,61 @@ TR.table_description{
 
 </STYLE>
 
-<SCRIPT TYPE='text/javascript'>
-
-function aparece(obj,txt) {
-
-var a = obj.parentNode.parentNode.parentNode.rows;
-
-for (i = 0; a[i] != obj.parentNode.parentNode; i++);
-
-if ( i < a.length - 1 && a[i + 1].className == '_abstract_row' )
-   obj.parentNode.parentNode.parentNode.deleteRow(i + 1);
-else {
-   var newRow = obj.parentNode.parentNode.parentNode.insertRow(i + 1);
-   newRow.className = '_abstract_row';
-
-   var abstract = newRow.insertCell(0);
-   abstract.colSpan = 3;
-   abstract.innerHTML = txt;
-   abstract.style.backgroundColor = "#CCCCCC";
-}
-}
-
-
-</SCRIPT>
-
 </head>
 
 <body>
 
-<TABLE CLASS='main_table' ID='main_table'> 
+  <div class="container-fluid">
+    
+    <DIV CLASS="row">
+      <DIV CLASS="col-8"><H1>Seminários de otimização</H1></DIV>
+      <DIV CLASS="col-3"> </DIV>
+      <DIV CLASS="col-1"><A HREF='index.html'> Home </A></DIV>
+    </DIV>
 
-<TR> <TD ALIGN='right'> <A HREF='index.html'> Inicial </A> </TD> </TR>
+    <div class="row">
+      <div class="col-8">
+        <p> Os seminários de otimização e afins acontecem
+          quinzenalmente às <B>segundas-feiras</B>, das <B>10:00</B>
+          às <B>11:00</B>.
+      <br>
+      O objetivo principal dos seminários é apresentar, divulgar e
+      compartilhar temas de estudos correntes e/ou futuros em
+      otimização e suas aplicações.
+      <p>
+      </div>
+    </div>
 
-<TR>
-<TD><h1>Seminários de Otimização e Afins</h1></TD>
-</TR>
+    <div class="row m-2">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th> Data </th>
+            <th> Título </th>
+            <th> Palestrante </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>29/03/21</td>
+            <td>LOVO sem derivadas com restrições</td>
+            <td>Anderson Schwertner (DMA-UEM)</td>
+          </tr>
+          <tr>
+            <td>26/04/21</td>
+            <td>Uma aplicação de otimização sem derivadas em engenharia química</td>
+            <td>Lucas Francisco Santos (DEQ-UEM)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-<TR> <TD>
-
-<TABLE WIDTH="50%">
-  <TR> <TD> Os seminários de otimização e afins acontecem
-      quinzenalmente às <B>segundas-feiras</B>, das <B>14:00</B>
-      às <B>15:00</B>.
-      <P>
-	O objetivo principal dos seminários é apresentar, divulgar e
-	compartilhar temas de estudos correntes e/ou futuros em
-	otimização e áreas afins.
-  </TD> </TR>
-</TABLE>
-
-<TR> <TD>
-
-    <TABLE WIDTH='100%'>
-      <TR CLASS='title_sep'> <TD COLSPAN='3'>Semestre 1 - 2014</TD></TR>
-      <TR CLASS='table_description'> <TD>Data</TD> <TD>Palestrante</TD> <TD>Título</TD>
-
-      <TR>
-        <TD>10/03</TD> <TD>Francisco Sobral</TD>
-        <TD> Otimização sem derivadas com restrições magras <A HREF='#' ONCLICK='aparece(this,"Apresentarei os resultados encontrados no meu doutorado e possibilidades para o futuro.")'>Resumo</A>
-        </TD>
-      </TR>
-
-      <TR>
-        <TD>24/03</TD> <TD>Emerson Castelani</TD>
-        <TD> Lagrangiano Aumentado com região de confiança
-        </TD>
-      </TR>
-
-      <TR>
-        <TD>07/04</TD> <TD>João Paulo Costalonga</TD>
-        <TD>Sobre a distribuição de horários <A HREF='#'
-        ONCLICK='aparece(this,"Discutiremos um modelo para resolver o problema de distribuição de horários para os professores do DMA.")'>Resumo</A> </TD>
-      </TR>
-
-      <TR>
-        <TD>28/04</TD> <TD> Wesley Shirabayashi </TD>
-        <TD> A definir </TD>
-      </TR>
-
-      <TR>
-        <TD>19/05</TD> <TD> Eduardo Neves </TD>
-        <TD> Objetos estocásticos aplicados a geometria diferencial <A HREF='#' ONCLICK='aparece(this,"Esta palestra tem por objetivo apresentar os objetos centrais da Geometria Estocástica. Começaremos inicialmente com os conceitos de movimento Browniano, Martingales e Difusões em variedades Riemannianas. Em seguida usaremos estes objetos probabilísticos para demonstrar alguns teoremas tais como: Teorema de Picard, Dirichlet e Liouville.")'>Resumo</A>
-	  <A HREF='files/eduardo-seminario-refs.pdf'>Referências</A> </TD>
-      </TR>
-
-      <TR>
-        <TD>09/06</TD> <TD> Francisco Sobral</TD>
-        <TD> O problema do Google. <A HREF='#' ONCLICK='aparece(this,"Neste seminário falaremos sobre o que é o problema do Google e uma estratégia simples para resolvê-lo, utilizando programação não linear.")'>Resumo</A> </TD>
-      </TR>
-
-      <TR>
-        <TD>16/06</TD> <TD></TD>
-        <TD></TD>
-      </TR>
-    </TABLE>
-
-</TR> </TD>
-
-</TABLE>
+  </div>
       
 <hr>
 <address></address>
 <!-- hhmts start -->
-Last modified: Jun 2014
+Last modified: Feb 2021
 <!-- hhmts end -->
 </body> </html>
 
