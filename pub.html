@@ -25,39 +25,39 @@ TR.title_sep{
 
 </STYLE>
 
-<SCRIPT TYPE='text/javascript'>
+<!-- <SCRIPT TYPE='text/javascript'> -->
 
-function aparece(obj,txt) {
+<!-- function aparece(obj,txt) { -->
 
-/*
-this.alert("offsetWidth=" + obj.offsetWidth + "\n" +
-           "offsetHeight=" + obj.offsetHeight + "\n" +
-           "offsetParent=" + obj.offsetParent.offsetTop + "\n" +
-           "offsetParent=" + obj.offsetParent.offsetLeft + "\n" +
-           "offsetTop=" + obj.offsetTop + "\n" +
-           "offsetLeft=" + obj.offsetLeft + "\n" +
-           "scrollHeight=" + obj.scrollHeight + "\n" +
-           "Proximo=" + obj.nextSibling.nextSibling.offsetTop);
-*/          
+<!-- /* -->
+<!-- this.alert("offsetWidth=" + obj.offsetWidth + "\n" + -->
+<!--            "offsetHeight=" + obj.offsetHeight + "\n" + -->
+<!--            "offsetParent=" + obj.offsetParent.offsetTop + "\n" + -->
+<!--            "offsetParent=" + obj.offsetParent.offsetLeft + "\n" + -->
+<!--            "offsetTop=" + obj.offsetTop + "\n" + -->
+<!--            "offsetLeft=" + obj.offsetLeft + "\n" + -->
+<!--            "scrollHeight=" + obj.scrollHeight + "\n" + -->
+<!--            "Proximo=" + obj.nextSibling.nextSibling.offsetTop); -->
+<!-- */           -->
 
-var a = obj.parentNode.parentNode.parentNode.rows;
+<!-- var a = obj.parentNode.parentNode.parentNode.rows; -->
 
-for (i = 0; a[i] != obj.parentNode.parentNode; i++);
+<!-- for (i = 0; a[i] != obj.parentNode.parentNode; i++); -->
 
-if ( i < a.length - 1 && a[i + 1].className == '_abstract_row' )
-   obj.parentNode.parentNode.parentNode.deleteRow(i + 1);
-else {
-   var newRow = obj.parentNode.parentNode.parentNode.insertRow(i + 1);
-   newRow.className = '_abstract_row';
+<!-- if ( i < a.length - 1 && a[i + 1].className == '_abstract_row' ) -->
+<!--    obj.parentNode.parentNode.parentNode.deleteRow(i + 1); -->
+<!-- else { -->
+<!--    var newRow = obj.parentNode.parentNode.parentNode.insertRow(i + 1); -->
+<!--    newRow.className = '_abstract_row'; -->
 
-   var abstract = newRow.insertCell(0);
-   abstract.innerHTML = txt;
-   abstract.style.backgroundColor = "#4F8991";
-}
-}
+<!--    var abstract = newRow.insertCell(0); -->
+<!--    abstract.innerHTML = txt; -->
+<!--    abstract.style.backgroundColor = "#4F8991"; -->
+<!-- } -->
+<!-- } -->
 
 
-</SCRIPT>
+<!-- </SCRIPT> -->
 
 </head>
 
