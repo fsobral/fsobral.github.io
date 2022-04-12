@@ -18,7 +18,18 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>    
-  
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<script>
+  window.MathJax = {
+      tex: {
+          tags: 'ams'
+      }
+  };
+</script>
+
 <STYLE>
 
 TR.title_sep{
@@ -92,7 +103,7 @@ TR.table_description{
             <td>12/04/22</td>
             <td>
               <a href="#s20220412" data-toggle="modal">
-                Variedades de Finsler de classe C0
+                Variedades de Finsler de classe \(C^0\)
               </a>
             </td>
             <td>Ryuichi Fukuoka (UEM)</td>
@@ -230,23 +241,24 @@ TR.table_description{
         <!-- Modal body -->
         <div class="modal-body text-body">
           Uma norma assimétrica em um espaço vetorial V de dimensão
-          finita é uma função f:V→R que satisfaz todas as condições de
-          norma, exceto a simetria f(v)=f(-v). Uma variedade de
-          Finsler M de classe Cº é uma generalização de superfície
-          regular em R³ tal que: (i) os produtos internos em cada
-          espaço tangente (primeira forma fundamental) são
-          substituídos por normas assimétricas que “variam
-          continuamente” ao longo dos espaços tangentes; (ii) a
-          dimensão é finita e maior ou igual a dois; (iii) estamos
+          finita é uma função \(f:V\to \mathbb{R}\) que satisfaz todas
+          as condições de norma, exceto a simetria \(f(v)=f(-v)\). Uma
+          variedade de Finsler \(M\) de classe \(C^0\) é uma
+          generalização de superfície regular em \(R^3\) tal que: (i)
+          os produtos internos em cada espaço tangente (primeira forma
+          fundamental) são substituídos por normas assimétricas que
+          “variam continuamente” ao longo dos espaços tangentes; (ii)
+          a dimensão é finita e maior ou igual a dois; (iii) estamos
           interessados na geometria intrínseca de M.  Nesta palestra
           apresentaremos geodésicas (curvas localmente minimizantes)
           em vários ambientes: Espaços euclidianos, esferas, plano
-          hiperbólico, R^n com a norma do máximo e superfícies
-          regulares. Indicaremos semelhanças e diferenças entre esses
-          exemplos e geodésicas em uma variedade de Finsler de classe
-          Cº , bem como as principais técnicas utilizadas para
-          estudar estes objetos. Trabalho conjunto com Anderson Macedo
-          Setti, Hugo Murilo Rodrigues e Jéssica Buzatto Prudencio.
+          hiperbólico, \(\mathbb{R}^n\) com a norma do máximo e
+          superfícies regulares. Indicaremos semelhanças e diferenças
+          entre esses exemplos e geodésicas em uma variedade de
+          Finsler de classe \(C^0\) , bem como as principais técnicas
+          utilizadas para estudar estes objetos. Trabalho conjunto com
+          Anderson Macedo Setti, Hugo Murilo Rodrigues e Jéssica
+          Buzatto Prudencio.
         </div>
 
       </div>
@@ -267,7 +279,47 @@ TR.table_description{
 
         <!-- Modal body -->
         <div class="modal-body text-body">
-	  A ser enviado.
+          Em teoria dos números o Teorema de Euler (provado no ano de 1736 pelo matemático suíço Leonhard Euler),  estabelece que se \(n\) é um numero natural e \(a\) é um número inteiro primo relativo a \(n\), então  a seguinte congruência é satisfeita
+          \[
+          \begin{equation}\label{E}
+          a^{\phi(n)}\equiv 1\mod(n).
+          \end{equation}
+          \]
+          A função \(\phi\) que aparece na congruência anterior é chamada de função totiente de Euler, mais exatamente, \(\phi(n)\) denota a quantidade de números naturais entre \(1\) e \(n\) que são primos relativos a \(n\). Quando $n$ denota um número primo, \(\phi(n)=n-1\), logo a congruência em (\(\ref{E}\)) se transforma na congruência
+          $$
+          \begin{equation}\label{F}
+          a^{n-1}\equiv 1\mod(n),
+          \end{equation}
+          $$
+          a qual é conhecida atualmente como o pequeno teorema de Fermat (estabelecido por Pierre de Fermat em 1640, sem demonstração). Já que o teorema de Euler é uma generalização do pequeno teorema de Fermat, demonstrações do teorema de Euler podem ser adaptadas, sem muitas complicações, a demonstrações do pequeno teorema de Fermat. Mas o contrario, em geral, é uma tarefa complicada. Um dos objetivos em esta palestra, é apresentar uma prova direta (usando apenas aritmética modular) do teorema de Euler a partir da formula obtida por Fermat em (\(\ref{F}\)). Mostrando assim, que esses resultados fundamentais da teoria dos números, são de fato equivalentes.
+          <BR> Por outro lado, uma generalização natural do teorema de
+          Euler pode ser obtida como aplicação do teorema de Lagrange
+          (1781) para grupos. A saber, se consideramos \(R\) um anel
+          finito com identidade e \(R^*\) o grupo de unidades de \(R\),
+          o teorema de Lagrange implica que
+          $$
+          \begin{equation}\label{LR} a^{|R^*|}=
+          1,\hspace{1.0cm}\text{para todo }\hspace{0.2cm} a\in R^*,
+          \end{equation}
+          $$
+          onde \(|R^*|\) denota a quantidade de
+          elementos do grupo \(R^*\). Assim, se consideramos
+          \(R=\mathbb{Z}_n\) o anel de inteiros modulo \(n\), temos
+          que \(|R^*|=\phi(n)\), logo (\(\ref{E}\)) e (\(\ref{F}\))
+          são de fato casos particulares de (\(\ref{LR}\)). Inspirados
+          na identidade que aparece em (\(\ref{LR}\)), formulamos as
+          seguintes perguntas: é possível encontrar
+          $\alpha\in\mathbb{N}$ tal que, \(\alpha<|R^*|\) e
+          \(a^\alpha=1\) para todo \(a\in R^*\)? Se \(R^*\) é
+          infinito, ainda é possível encontrar \(\alpha\in\mathbb{N}\)
+          com \(a^\alpha=1\) para todo \(a\in R^*\)?<BR>  Neste seminário,
+          apresentaremos respostas afirmativas para essas perguntas
+          quando o anel \(R\) satisfaz a chamada condição CNC definida
+          recentemente em F.D. de Melo Hernández, C.A. Hernández
+          Melo, H. Tapia-Recillas, "Fermat’s little theorem and
+          Euler’s theorem in a class of rings", Communications in
+          Algebra, 2022.
+
         </div>
 
       </div>
