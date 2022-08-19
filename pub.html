@@ -78,17 +78,15 @@ TR.title_sep{
     <UL class="list-group">
 
       <LI class="list-group-item list-group-item-action list-group-item-secondary" >
-         J. C. Bortolete, L. F. Bueno, R. Butkeraites, A. A. Chaves,
-         G. Collaço, M. Magueta, L. L. Salles Neto, T. S. Santos,
-         T. S. Silva, F. N. C. Sobral, F. J. R. Pelogia,
-         H. H. Yanasse, "A support tool for planning classrooms
-         considering social distancing between students", 2021.
-         <A HREF="#" data-toggle="collapse" data-target="#bortolete2021">
+        J. Gondzio and F. N. C. Sobral, "Polynomial worst-case
+        iteration complexity of quasi-Newton primal-dual interior
+        point algorithms for linear programming", Submitted, 2022.
+        <A HREF="#" data-toggle="collapse" data-target="#gondzio2022">
            <SPAN class="badge badge-primary">
              Abstract
            </SPAN>
          </A>
-         <A HREF="http://www.optimization-online.org/DB_FILE/2021/04/8343.pdf">
+         <A HREF="http://arxiv.org/abs/2208.08771">
            <SPAN class="badge badge-success">Technical Report</SPAN>
          </A>
          
@@ -97,7 +95,106 @@ TR.title_sep{
          <!-- </A> -->
       </LI>
 
-      <DIV ID="bortolete2021" class="collapse list-group-item list-group-item-secondary">
+      <DIV ID="gondzio2022" class="collapse list-group-item list-group-item-secondary">
+        Quasi-Newton methods are well known techniques for large-scale
+        numerical optimization. They use an approximation of the
+        Hessian in optimization problems or the Jacobian in system of
+        nonlinear equations. In the Interior Point context,
+        quasi-Newton algorithms compute low-rank updates of the matrix
+        associated with the Newton systems, instead of computing it
+        from scratch at every iteration. In this work, we show that a
+        simplified quasi-Newton primal-dual interior point algorithm
+        for linear programming enjoys polynomial worst-case iteration
+        complexity. Feasible and infeasible cases of the algorithm are
+        considered and the most common neighborhoods of the central
+        path are analyzed. To the best of our knowledge, this is the
+        first attempt to deliver polynomial worst-case iteration
+        complexity bounds for these methods. Unsurprisingly, the
+        worst-case complexity results obtained when quasi-Newton
+        directions are used are worse than their counterparts when
+        Newton directions are employed. However, quasi-Newton updates
+        are very attractive for large-scale optimization problems
+        where the cost of factorizing the matrices is much higher than
+        the cost of solving linear systems.
+        <!-- <BR> -->
+          <!-- <BR> -->
+          <!--   * This is a pre-print of an article published in Journal of -->
+          <!--   Global Optimization. The final authenticated version is -->
+          <!--   available online at: -->
+          <!--   <a class="text-secondary" -->
+          <!--   href="https://doi.org/10.1007/s10898-020-00970-4">https://doi.org/10.1007/s10898-020-00970-4</a> -->
+          <!--   . -->
+        </DIV>
+
+        <!-- -------------------------------------- -->
+
+      <LI class="list-group-item list-group-item-action list-group-item-secondary" >
+         A. E. Schwertner and F. N. C. Sobral, "On complexity constants
+         of linear and quadratic models for derivative-free
+         trust-region algorithms". Submitted, 2022.
+         <A HREF="#" data-toggle="collapse" data-target="#schwertner2022">
+           <SPAN class="badge badge-primary">
+             Abstract
+           </SPAN>
+         </A>
+         <A HREF="https://arxiv.org/abs/2205.11358">
+           <SPAN class="badge badge-success">Technical Report</SPAN>
+         </A>
+         
+         <!-- <A HREF="https://rdcu.be/cc0Qs"> -->
+         <!--  <SPAN class="badge badge-danger">Article</SPAN> -->
+         <!-- </A> -->
+      </LI>
+
+      <DIV ID="schwertner2022" class="collapse list-group-item list-group-item-secondary">
+        Complexity analysis has become an important tool in the
+        convergence analysis of optimization algorithms. For
+        derivative-free optimization algorithms, it is not
+        different. Interestingly, several constants that appear when
+        developing complexity results hide the dimensions of the
+        problem. This work organizes several results in literature
+        about bounds that appear in derivative-free trust-region
+        algorithms based on linear and quadratic models. All the
+        constants are given explicitly by the quality of the sample
+        set, dimension of the problem and number of sample points. We
+        extend some results to allow "inexact" interpolation sets. We
+        also provide a clearer proof than those already existing in
+        literature for the underdetermined case.
+          <!-- <BR> -->
+          <!-- <BR> -->
+          <!--   * This is a pre-print of an article published in Journal of -->
+          <!--   Global Optimization. The final authenticated version is -->
+          <!--   available online at: -->
+          <!--   <a class="text-secondary" -->
+          <!--   href="https://doi.org/10.1007/s10898-020-00970-4">https://doi.org/10.1007/s10898-020-00970-4</a> -->
+          <!--   . -->
+        </DIV>
+
+        <!-- -------------------------------------- -->
+
+      <LI class="list-group-item list-group-item-action list-group-item-secondary" >
+         J. C. Bortolete, L. F. Bueno, R. Butkeraites, A. A. Chaves,
+         G. Collaço, M. Magueta, L. L. Salles Neto, T. S. Santos,
+         T. S. Silva, F. N. C. Sobral, F. J. R. Pelogia,
+         H. H. Yanasse, "A support tool for planning classrooms
+         considering social distancing between students",
+         Computational and Applied Mathematics, vol. 41, no. 1, p. 22,
+         2022.
+         <A HREF="#" data-toggle="collapse" data-target="#bortolete2022">
+           <SPAN class="badge badge-primary">
+             Abstract
+           </SPAN>
+         </A>
+         <A HREF="http://www.optimization-online.org/DB_FILE/2021/04/8343.pdf">
+           <SPAN class="badge badge-success">Technical Report</SPAN>
+         </A>
+         
+         <A HREF="https://link.springer.com/10.1007/s40314-021-01718-w">
+          <SPAN class="badge badge-danger">Article</SPAN>
+         </A>
+      </LI>
+
+      <DIV ID="bortolete2022" class="collapse list-group-item list-group-item-secondary">
         In this paper, we present the online tool
         salaplanejada.unifesp.br developed to assist the layout
         planning of classrooms considering the social distance in the
